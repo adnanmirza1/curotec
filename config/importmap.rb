@@ -1,0 +1,22 @@
+# Pin npm packages by running ./bin/importmap
+
+pin "application"
+pin "@hotwired/turbo-rails", to: "turbo.min.js"
+pin "@hotwired/stimulus", to: "stimulus.min.js"
+pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
+pin "banner", to: "theme/banner.js"
+pin "a11y", to: "theme/a11y.min.js"
+pin "script", to: "theme/script.js"
+pin "astra-addon", to: "theme/astra-addon.js"
+pin "components", to: "theme/components.min.js"
+pin "date", to: "theme/date.min.js"
+pin "frontend", to: "theme/frontend.min.js"
+pin "frontend-1", to: "theme/frontend-1.min.js"
+pin "frontend-2", to: "theme/frontend-2.min.js"
+pin "keycodes", to: "theme/keycodes.min.js"
+pin "loader", to: "theme/loader.js"
+pin "moment", to: "theme/moment.min.js"
+pin "ooohboi-steroids", to: "theme/ooohboi-steroids.js"
+pin "rich-text", to: "theme/rich-text.min.js"
+
+pin_all_from "app/javascript/controllers", under: "controllers"
