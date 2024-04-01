@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Curotec - SaaS, Software &amp; Development Agency</title>
+    <%= render 'shared/metas' %>
+    <%= render 'shared/links' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <%= render 'shared/scripts' %>
+    <%= render 'shared/styles' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+  <body itemtype="https://schema.org/WebPage" itemscope="itemscope"
+  class="home page-template-default page page-id-9 wp-custom-logo mega-menu-primary ast-desktop ast-page-builder-template ast-no-sidebar astra-4.6.4 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-page-21366 elementor-default elementor-template-full-width elementor-kit-385 elementor-page elementor-page-9 astra-addon-4.6.3"
+  >
+    <a class="skip-link screen-reader-text" href="#content" role="link" title="Skip to content">
+      Skip to content
+    </a>
+    <div class="hfeed site" id="page">
+      <%= render 'shared/header' %>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
+    <%= render 'shared/scroll_to_top' %>
+    <%= render 'shared/body_scripts' %>
+  </body> 
 </html>
