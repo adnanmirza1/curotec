@@ -280,7 +280,7 @@
                                              <div class="elementor-element elementor-element-c11f4ff elementor-widget elementor-widget-formidable" data-id="c11f4ff" data-element_type="widget" data-settings="{&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;}" data-widget_type="formidable.default">
                                                 <div class="elementor-widget-container">
                                                    <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_13_container" data-token="3c8aadb4d24ba46daecb32dbec642765">
-                                                        <%= form_with(url: articles_create_path, method: :get) do |form| %>
+                                                        <%= form_with(url: articles_create_path, method: :get, class: "frm-show-form") do |form| %>
                                                             <div class="frm_form_fields">
                                                             <fieldset>
                                                                 <legend class="frm_screen_reader">Request for Service</legend>
@@ -298,7 +298,7 @@
                                                                     Full name
                                                                     <span class="frm_required"></span>
                                                                     <% end %>
-                                                                    <%= form.text_field :name, id: "field_sljbh3", name: "item_meta[116]", value: "", data: { reqmsg: "This field cannot be blank.", invmsg: "Text is invalid" }, aria: { required: "true", invalid: "false" } %>
+                                                                    <%= form.text_field :name, data: { reqmsg: "This field cannot be blank.", invmsg: "Text is invalid" }, aria: { required: "true", invalid: "false" } %>
                                                                 </div>
                                                         
                                                                 <div id="frm_field_117_container" class="frm_form_field form-field frm_required_field frm_inside_container frm6 frm_first">
