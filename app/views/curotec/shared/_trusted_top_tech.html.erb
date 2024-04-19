@@ -44,6 +44,8 @@ data-settings='{"animation":"fadeInUp","animation_delay":400}'
             >
             <figure class="gallery-item">
                 <div class="gallery-icon landscape">
+                <%= image_tag("clutch_reviews.webp", alt: "Description", class: "attachment-full size-full wp-image-9429") %>
+                <!--
                 <img
                     loading="lazy"
                     decoding="async"
@@ -57,7 +59,7 @@ data-settings='{"animation":"fadeInUp","animation_delay":400}'
                     https://www.curotec.com/wp-content/uploads/2024/01/clutch_reviews_7e856e.png?resize=300,41 300w
                     "
                     sizes="(max-width: 640px) 100vw, 640px"
-                />
+                /> -->
                 </div>
             </figure>
             <figure class="gallery-item">
@@ -67,7 +69,7 @@ data-settings='{"animation":"fadeInUp","animation_delay":400}'
                     decoding="async"
                     width="12"
                     height="370"
-                    src="https://www.curotec.com/wp-content/uploads/2024/01/Screenshot-2024-01-25-at-12.17.39-AM.png?w=12"
+                    src="<%= asset_path('veritical-line.png') %>"
                     class="attachment-medium_large size-medium_large"
                     alt=""
                 />
@@ -80,7 +82,7 @@ data-settings='{"animation":"fadeInUp","animation_delay":400}'
                     decoding="async"
                     width="130"
                     height="50"
-                    src="https://www.curotec.com/wp-content/uploads/2023/11/comcast-e1700847774284.png?w=130"
+                    src="<%= asset_path('comcast-e1.webp') %>"
                     class="attachment-medium_large size-medium_large"
                     alt=""
                 />
@@ -93,7 +95,7 @@ data-settings='{"animation":"fadeInUp","animation_delay":400}'
                     decoding="async"
                     width="650"
                     height="50"
-                    src="https://www.curotec.com/wp-content/uploads/2023/11/automattic-e1700847754935.png?w=650"
+                    src="<%= asset_path('automattic-e1.webp')%>"
                     class="attachment-medium_large size-medium_large"
                     alt=""
                 />
@@ -106,7 +108,7 @@ data-settings='{"animation":"fadeInUp","animation_delay":400}'
                     decoding="async"
                     width="76"
                     height="50"
-                    src="https://www.curotec.com/wp-content/uploads/2023/11/gtt-e1700847793922.png?w=76"
+                    src="<%= asset_path('gtt-.webp')%>"
                     class="attachment-medium_large size-medium_large"
                     alt=""
                     srcset="
@@ -124,7 +126,7 @@ data-settings='{"animation":"fadeInUp","animation_delay":400}'
                     decoding="async"
                     width="264"
                     height="50"
-                    src="https://www.curotec.com/wp-content/uploads/2023/11/ironclad-e1700847743810.png?w=264"
+                    src="<%= asset_path('ironclad-e17.webp')%>"
                     class="attachment-medium_large size-medium_large"
                     alt=""
                 />
