@@ -11,4 +11,6 @@ class CurotecController < ApplicationController
   end
   def contact
   end
+  def service
+  end
 end
