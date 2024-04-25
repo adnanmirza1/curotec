@@ -1,0 +1,165 @@
+<section class = "head-sect">
+    <div>
+        <div style = "padding: 40px">
+                <%= link_to(image_tag("logo2-new.png", alt: "Description", loading: "lazy", style: ""), root_path) %>
+        </div>
+        <div class = "container">
+            <div class = "text-center" style = "margin-bottom: 4rem;">
+                <div class = "full-head">Igknight Tech | Full time</div>
+                <h2 style = "line-height: normal">Senior Vue.js Developer</h2>
+                <div class = "d-flex text-align-center justify-content-center" style = "line-height: normal">
+                    <%= image_tag("world-map.webp", class: "world-logo") %> 
+                    <div><spam class = "text-dark">Remote Job</spam> | <spam style = "font-size: 0.9375rem;">Posted on 01/30/2024</spam></div>
+                </div>
+                <div style = "margin-top: 28px;">
+                    <button name="button" type="reset" class = "interest-btn">I'm interested</button>
+                    <button name="button" type="reset" class = "share-job">share job via email</button>
+                </div></br>
+                <div>
+                    <div
+                        class="elementor-element elementor-element-eb1eb75 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                        data-id="eb1eb75"
+                        data-element_type="widget"
+                        data-settings='{"_ob_allow_hoveranimator":"no"}'
+                        data-widget_type="icon-list.default"
+                        >
+                        <div class="elementor-widget-container">
+                        <ul
+                            class="elementor-icon-list-items elementor-inline-items"
+                        >
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://www.linkedin.com/company/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-linkedin-in"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://www.facebook.com/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-facebook-f"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://twitter.com/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-twitter"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://www.youtube.com/c/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-youtube"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<div class = "container">
+<div>
+    <div><spam>Job listing<spam> > <spam>Job details</spam></div>
+</div>
+<hr>
+<div class = "row">
+    <div class = "col-lg-8 details-job">
+        <div>Job Description</div>
+    </div>
+    <div class = "col-lg-4">
+        <div>Job Information</div>
+    </div>
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div><%= @jobs.title %></div>
+<div><%= @jobs.description%></div>
+<div><%= @jobs.technology%></div>
+<style>
+.head-sect {
+    background-color: #d1f6d2d1;
+}
+.interest-btn {
+    color: white !important;
+    background-color: black !important;
+    border-radius: 4px !important;
+    border-color: black !important;
+    height: 49px !important;
+    margin-right: 17px;
+}
+.interest-btn:hover {
+  background-color: #bdc4d1 !important;
+}
+.share-job {
+    background-color: #ffffff0a !important;
+    border-color: black !important;
+    border-radius: 4px !important;
+    height: 49px !important;
+}
+.share-job:hover {
+  background-color: #bdc4d1 !important;
+}
+.world-logo {
+    width: 17px;
+    height: max-content;
+    margin-top: 6px;
+    margin-right: 9px;
+}
+.full-head {
+    color: #1a1a1af2;
+    font-weight: 400;
+}
+.details-job {
+    border-right: 1px solid #0000001f;
+    padding-right: 10px;
+}
+
+</style>

@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_04_16_140354) do
+ActiveRecord::Schema[7.0].define(version: 2024_04_25_121202) do
+  create_table "active_admin_comments", force: :cascade do |t|
+    t.string "namespace"
+    t.text "body"
+    t.string "resource_type"
+    t.integer "resource_id"
+    t.string "author_type"
+    t.integer "author_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author"
+    t.index ["namespace"], name: "index_active_admin_comments_on_namespace"
+    t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource"
+  end
+
   create_table "articles", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -19,6 +33,14 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_16_140354) do
     t.string "email"
     t.string "phone"
     t.string "website"
+  end
+
+  create_table "careers", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "technology"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
