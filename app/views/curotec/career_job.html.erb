@@ -6,10 +6,10 @@
         <div class = "container">
             <div class = "text-center" style = "margin-bottom: 4rem;">
                 <div class = "full-head">Igknight Tech | Full time</div>
-                <h2 style = "line-height: normal">Senior Vue.js Developer</h2>
+                <h2 style = "line-height: normal"><%= @jobs.title %></h2>
                 <div class = "d-flex text-align-center justify-content-center" style = "line-height: normal">
                     <%= image_tag("world-map.webp", class: "world-logo") %> 
-                    <div><spam class = "text-dark">Remote Job</spam> | <spam style = "font-size: 0.9375rem;">Posted on 01/30/2024</spam></div>
+                    <div><spam class = "text-dark">Remote Job</spam> | <spam style = "font-size: 0.9375rem;">Posted on <%= @jobs.created_at.strftime('%m/%d/%Y') %></spam></div>
                 </div>
                 <div style = "margin-top: 28px;">
                     <button name="button" type="reset" class = "interest-btn">I'm interested</button>
@@ -88,21 +88,42 @@
     </div>
 </section>
 <section>
-<div class = "container">
-<div>
-    <div><spam>Job listing<spam> > <spam>Job details</spam></div>
-</div>
-<hr>
-<div class = "row">
-    <div class = "col-lg-8 details-job">
-        <div>Job Description</div>
-    </div>
-    <div class = "col-lg-4">
-        <div>Job Information</div>
-    </div>
-</div>
+    <div class = "container" style = "width: 60%;">
+        <div>
+            <div style = "margin-top: 13px;">
+                <div style = "font-size: 14px">
+                    <%= link_to "Job listing", "/careers", class: "text-dark", style: "margin-right: 4px" %>
+                    <spam> <%= image_tag("download-greater-than.jpeg", loading: "lazy", style: "width: 10px;") %> <spam> 
+                    <spam></spam>
+                    <spam style = "margin-left: 4px">Job details</spam> 
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class = "row details-row">
+            <div class = "col-lg-8 details-job">
+                <div style = "margin-bottom: 44px;"><%= @jobs.body%></div>
+                <div style = "margin-top: 28px;">
+                    <button name="button" type="reset" class = "interest-btn">I'm interested</button>
+                </div></br>
+            </div>
+            <div class = "col-lg-4 info-sect1">
+                <div class = "text-dark info-indus">Job Information</div>
+                <div class = "font-fifteen">Industry</div>
+                <div class = "mb-3 text-dark font-eighteen"><%= @jobs.technology%></div>
+                <div class = "font-fifteen">Work Experience</div>
+                <div class = "text-dark font-eighteen"><%= @jobs.experience %> years</div>
 
-</div>
+            </div>
+        </div>
+    </div>
+</section>
+<seciont>
+    <div class = "third-section">
+        <%= link_to "View all jobs", careers_path%>
+        <%= image_tag("dot.webp", loading: "lazy", style: "width: 10px;") %>
+        <%= link_to "Visit website", "#"%>
+    </div>
 </section>
 
 
@@ -120,9 +141,7 @@
 
 
 
-<div><%= @jobs.title %></div>
-<div><%= @jobs.description%></div>
-<div><%= @jobs.technology%></div>
+
 <style>
 .head-sect {
     background-color: #d1f6d2d1;
@@ -161,5 +180,25 @@
     border-right: 1px solid #0000001f;
     padding-right: 10px;
 }
-
+.details-row {
+    border-bottom: 1px solid #0000001f;
+    padding-right: 10px;
+}
+.third-section {
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 10px
+}
+.info-indus {
+    margin-bottom: 10px;
+}
+.info-sect1 {
+    padding-left: 30px;
+}
+.font-fifteen {
+    font-size: 14px
+}
+.font-eighteen {
+    font-size: 18px;
+}
 </style>

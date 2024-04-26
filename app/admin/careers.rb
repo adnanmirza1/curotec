@@ -14,12 +14,24 @@ ActiveAdmin.register Career do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  permit_params :title, :description, :technology
+  actions :all, :except => [:new]
+  action_item :new, only: :index do
+    link_to 'create career', careers_new_path
+  end
+
+  permit_params :title, :description, :technology, :experience
+
+  filter :title
+  filter :technology
+  filter :created_at
+  filter :updated_at
+
   index do
     id_column
     column :title
     column :description
     column :technology
+    column :experience
     actions
   end
   form do |f|
@@ -27,6 +39,7 @@ ActiveAdmin.register Career do
       f.input :title
       f.input :technology
       f.input :description
+      f.input :experience
     end
     f.actions
   end
