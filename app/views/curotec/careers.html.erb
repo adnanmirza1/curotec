@@ -929,8 +929,8 @@
                                           <nav aria-label="Curotec &#8211; Careers">
                                           <div class="elementor-widget-container">
                                           <ul>
-                                             <% @career.each do |i|%> 
-                                                <%= link_to i.title, jobs_path(i), class: 'rsswidget' %>
+                                             <% @careers.each do |career|%> 
+                                                <%= link_to career.title, jobs_path(career), class: 'rsswidget' %>
                                              <% end %>
                                           </ul>
                                           </nav>

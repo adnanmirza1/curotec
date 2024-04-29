@@ -6,7 +6,7 @@ class CurotecController < ApplicationController
   def success_stories
   end
   def careers
-    @career = Career.all
+    @careers = Career.all
   end
   def insights
   end
