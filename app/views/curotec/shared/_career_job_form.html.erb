@@ -1,0 +1,73 @@
+<%= form_with(url: recruiter_create_path, method: :post, class: "container career-form-1 frm-show-form") do |form| %>
+    <!-- Basic info -->
+    <p class="basic-style">Basic info:</p>
+    <div class="form-row d-flex justify-content-between info-marg">
+      <div class="form-group col-md-6">
+        <%= form.label :name, "Name <span>*</span>".html_safe %>
+        <%= form.text_field :name, class: "form-control", placeholder: "Name", style: "width: 90%;" %>
+      </div>
+      <div class="form-group col-md-6">
+        <%= form.label :email, "Email <span>*</span>".html_safe %>
+        <%= form.email_field :email, class: "form-control", placeholder: "Email", style: "width: 90%;" %>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-between info-marg">
+      <div class="form-group col-md-6">
+        <%= form.label :mobile, "Mobile <span>*</span>".html_safe %>
+        <%= form.text_field :mobile, class: "form-control", placeholder: "Mobile", style: "width: 90%;" %>
+      </div>
+    </div>
+    <!-- Professional details -->
+    <p class="basic-style">Professional details:</p>
+    <div class="form-row d-flex justify-content-between info-marg">
+      <div class="form-group col-md-6">
+        <%= form.label :current_job_title, "Current Job Title <span>*</span>".html_safe %>
+        <%= form.select :job_title, options_for_select(["Fresher", "Project Lead", "Project Manager"]), { prompt: "-None-" }, class: "form-control input-skill" %>
+      </div>
+      <div class="form-group col-md-6">
+        <%= form.label :skill_set, "Skill Set <span>*</span>".html_safe %>
+        <%= form.text_field :skill_set, class: "form-control", placeholder: "Add skills", style: "width: 90%;" %>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-between info-marg">
+      <div class="form-group col-md-6">
+        <%= form.label :expected_salary, "Expected Salary <span>*</span>".html_safe %>
+        <%= form.text_field :expected_salary, class: "form-control", placeholder: "Expected Salary", style: "width: 90%;" %>
+      </div>
+      <div class="form-group col-md-6">
+        <%= form.label :current_salary, "Current Salary <span>*</span>".html_safe %>
+        <%= form.text_field :current_salary, class: "form-control", placeholder: "Current Salary", style: "width: 90%;" %>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-between info-marg">
+      <div class="form-group col-md-6">
+        <%= form.label :highest_qualification_held, "Highest Qualification Held".html_safe %>
+        <%= form.select :education_details, options_for_select(["BSIT", "BSCS", "B.SC"]), { prompt: "-None-" }, class: "form-control input-skill" %>
+      </div>
+    </div>
+    <div class="form-row d-flex justify-content-between info-marg">
+    <%= form.file_field :avatar %>
+    </div>
+    <%= form.submit "Submit", class: "btn btn-primary", style: "margin-top: 47px;" %>
+  <% end %>
+  
+
+<style>
+.career-form-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.basic-style {
+    font-size: 25px;
+    color: black;
+    margin-top: 12px;
+}
+.info-marg {
+    margin: 10px 0 10px 0;
+}
+.input-skill {
+    width: 90%;
+    height: 53px;
+    border-radius: 4px;
+}
+</style>

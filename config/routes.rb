@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   root "curotec#index"
   get '/articles/create', to: 'articles#create', as: 'articles_create'
   resources :careers
+  post '/recruiter/create', to: 'recruiters#create'
 end

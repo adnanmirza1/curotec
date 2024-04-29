@@ -927,11 +927,12 @@
                                        <div class="elementor-widget-container">
                                           <h5><a class="rsswidget rss-widget-feed" href="https://careers.curotec.com/jobs/Careers/rss"><img decoding="async" class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.curotec.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget rss-widget-title" href="https://careers.curotec.com/jobs/Careers/rss">Curotec &#8211; Careers</a></h5>
                                           <nav aria-label="Curotec &#8211; Careers">
-                                          <% @career.each do |i|%>
-                                                <div style = "margin: 10px">
-                                                      <%= link_to i.title, jobs_path(i), class: 'rsswidget' %>
-                                                </div>
-                                          <% end %>
+                                          <div class="elementor-widget-container">
+                                          <ul>
+                                             <% @career.each do |i|%>
+                                                <%= link_to i.title, jobs_path(i), class: 'rsswidget' %>
+                                             <% end %>
+                                          </ul>
                                           </nav>
                                        </div>
                                     </div>
@@ -1462,7 +1463,7 @@
     top: 32px;
     width: 27px;
     height: 27px;
-    background: url(/wp-content/uploads/2023/10/arrow-right.svg);
+    background: url("https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-arrow-right-thin.png");
     background-size: cover;
     }
     @media only screen and (max-width: 1024px) {
