@@ -927,22 +927,12 @@
                                        <div class="elementor-widget-container">
                                           <h5><a class="rsswidget rss-widget-feed" href="https://careers.curotec.com/jobs/Careers/rss"><img decoding="async" class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.curotec.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget rss-widget-title" href="https://careers.curotec.com/jobs/Careers/rss">Curotec &#8211; Careers</a></h5>
                                           <nav aria-label="Curotec &#8211; Careers">
-                                             <ul>
-                                                <li><a class='rsswidget' href='#'>Senior Vue.js Developer</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior .NET&#x2f;Sitefinity CMS Developer</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior Software Engineer - Ruby on Rails</a></li>
-                                                <li><a class='rsswidget' href='#'>Full Stack Developer &#x28;Laravel&#x2f;Vue.js&#x29;</a></li>
-                                                <li><a class='rsswidget' href='#'>Full Stack Developer &#x28;Laravel&#x2f;React&#x29;</a></li>
-                                                <li><a class='rsswidget' href='#'>Python Data Engineer</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior Full-stack Developer &#x28;Laravel&#x2f;Vue.js&#x29;</a></li>
-                                                <li><a class='rsswidget' href='#'>Software QA Engineer</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior Sales Development Representative</a></li>
-                                                <li><a class='rsswidget' href='#'>Devops Engineer</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior Software Product Manager</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior WordPress Developer</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior Technical Sales Executive</a></li>
-                                                <li><a class='rsswidget' href='#'>Senior Technical Project Manager</a></li>
-                                             </ul>
+                                          <div class="elementor-widget-container">
+                                          <ul>
+                                             <% @career.each do |i|%>
+                                                <%= link_to i.title, jobs_path(i), class: 'rsswidget' %>
+                                             <% end %>
+                                          </ul>
                                           </nav>
                                        </div>
                                     </div>
@@ -1473,7 +1463,7 @@
     top: 32px;
     width: 27px;
     height: 27px;
-    background: url(/wp-content/uploads/2023/10/arrow-right.svg);
+    background: url("https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-arrow-right-thin.png");
     background-size: cover;
     }
     @media only screen and (max-width: 1024px) {

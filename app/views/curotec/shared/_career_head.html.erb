@@ -1,0 +1,104 @@
+<section class = "head-sect">
+    <div>
+        <div style = "padding: 40px">
+                <%= link_to(image_tag("logo2-new.png", alt: "Description", loading: "lazy", style: ""), root_path) %>
+        </div>
+        <div class = "container">
+            <div class = "text-center" style = "margin-bottom: 4rem;">
+                <div class = "full-head">Igknight Tech | Full time</div>
+                <h2 style = "line-height: normal"><%= @jobs.title %></h2>
+                <div class = "d-flex text-align-center justify-content-center" style = "line-height: normal">
+                    <%= image_tag("world-map.webp", class: "world-logo") %> 
+                    <div><spam class = "text-dark">Remote Job</spam> | <spam style = "font-size: 0.9375rem;">Posted on <%= @jobs.created_at.strftime('%m/%d/%Y') %></spam></div>
+                </div>
+                <div style = "margin-top: 28px;">
+                    <button name="button" type="reset" class = "interest-btn" id="interestedBtn">I'm interested</button>
+                    <button name="button" type="reset" class = "share-job">
+                         <a target= "_blank" class="share-expert-link" href=mailto:?subject=<%= request.url %>">
+                             share job via email
+                         </a>
+                        </button>
+                </div></br>
+                <div>
+                    <div
+                        class="elementor-element elementor-element-eb1eb75 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                        data-id="eb1eb75"
+                        data-element_type="widget"
+                        data-settings='{"_ob_allow_hoveranimator":"no"}'
+                        data-widget_type="icon-list.default"
+                        >
+                        <div class="elementor-widget-container">
+                        <ul
+                            class="elementor-icon-list-items elementor-inline-items"
+                        >
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://www.linkedin.com/company/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-linkedin-in"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://www.facebook.com/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-facebook-f"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://twitter.com/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-twitter"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                            <li
+                            class="elementor-icon-list-item elementor-inline-item"
+                            >
+                            <a href="https://www.youtube.com/c/igknighttech">
+                                <span class="elementor-icon-list-icon">
+                                <i
+                                    aria-hidden="true"
+                                    class="fab fa-youtube"
+                                ></i>
+                                </span>
+                                <span class="elementor-icon-list-text"></span>
+                            </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(interestedBtn).click(function(){
+        $(career_body).hide();
+        $(career_job_form).show();
+    });
+});
+
+</script>

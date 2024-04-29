@@ -1,0 +1,31 @@
+<section>
+    <div class = "container" style = "width: 60%;">
+        <div>
+            <div style = "margin-top: 13px;">
+                <div style = "font-size: 14px">
+                    <%= link_to "Job listing", "/careers", class: "text-dark", style: "margin-right: 4px" %>
+                    <spam> <%= image_tag("download-greater-than.jpeg", loading: "lazy", style: "width: 10px;") %> <spam> 
+                    <spam></spam>
+                    <spam style = "margin-left: 4px">Job details</spam> 
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class = "row details-row">
+            <div class = "col-lg-8 details-job">
+                <div style = "margin-bottom: 44px;"><%= @jobs.body%></div>
+                <div style = "margin-top: 28px;">
+                    <button name="button" type="reset" class = "interest-btn" id="interestedBtn">I'm interested</button>
+                </div></br>
+            </div>
+            <div class = "col-lg-4 info-sect1">
+                <div class = "text-dark info-indus">Job Information</div>
+                <div class = "font-fifteen">Industry</div>
+                <div class = "mb-3 text-dark font-eighteen"><%= @jobs.technology%></div>
+                <div class = "font-fifteen">Work Experience</div>
+                <div class = "text-dark font-eighteen"><%= @jobs.experience %> years</div>
+
+            </div>
+        </div>
+    </div>
+</section>

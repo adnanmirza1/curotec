@@ -1,0 +1,76 @@
+<%= render "curotec/shared/career_head" %>
+<div id="career_body">
+  <%= render "curotec/shared/career_body" %>
+</div>
+<div id="career_job_form" style="display: none;">
+  <%= render "curotec/shared/career_job_form" %>
+</div>
+
+
+<seciont>
+    <div class = "third-section">
+        <%= link_to "View all jobs", careers_path%>
+        <%= image_tag("dot.webp", loading: "lazy", style: "width: 10px;") %>
+        <%= link_to "Visit website", "#"%>
+    </div>
+</section>
+<style>
+.head-sect {
+    background-color: #d1f6d2d1;
+}
+.interest-btn {
+    color: white !important;
+    background-color: black !important;
+    border-radius: 4px !important;
+    border-color: black !important;
+    height: 49px !important;
+    margin-right: 17px;
+}
+.interest-btn:hover {
+  background-color: #bdc4d1 !important;
+}
+.share-job {
+    background-color: #ffffff0a !important;
+    border-color: black !important;
+    border-radius: 4px !important;
+    height: 49px !important;
+}
+.share-job:hover {
+  background-color: #bdc4d1 !important;
+}
+.world-logo {
+    width: 17px;
+    height: max-content;
+    margin-top: 6px;
+    margin-right: 9px;
+}
+.full-head {
+    color: #1a1a1af2;
+    font-weight: 400;
+}
+.details-job {
+    border-right: 1px solid #0000001f;
+    padding-right: 10px;
+}
+.details-row {
+    border-bottom: 1px solid #0000001f;
+    padding-right: 10px;
+}
+.third-section {
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 10px
+}
+.info-indus {
+    margin-bottom: 10px;
+}
+.info-sect1 {
+    padding-left: 30px;
+}
+.font-fifteen {
+    font-size: 14px
+}
+.font-eighteen {
+    font-size: 18px;
+}
+</style>
