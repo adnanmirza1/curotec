@@ -5,12 +5,15 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  # database: db/development.sqlite3
+  database: flatiron_mod3_development
 test:
   <<: *default
-  database: db/test.sqlite3
+  # database: db/test.sqlite3
+  database: flatiron_mod3_test
 
 production:
   <<: *default
   # database: db/production.sqlite3
-  url: <%= ENV['DATABASE_URL'] %>
+  database: flatiron_mod3_production
+  # url: <%= ENV['DATABASE_URL'] %>
