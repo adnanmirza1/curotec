@@ -10,6 +10,8 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "sprockets-rails"
 gem 'activeadmin'
 gem 'sassc-rails', '~> 2.0'
+gem 'pg'
+
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
