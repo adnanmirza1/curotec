@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'curotec#contact'
   get '/services', to: 'curotec#service'
   get '/jobs', to: 'curotec#career_job'
+  get '/sitemap', to: 'curotec#sitemap'
   # get '/', to: 'curotec#'
   # Defines the root path route ("/")
   root "curotec#index"
