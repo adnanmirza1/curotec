@@ -19,4 +19,6 @@ class CurotecController < ApplicationController
   end
   def sitemap
   end
+  def policy
+  end
 end
