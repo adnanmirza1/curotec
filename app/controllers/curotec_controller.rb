@@ -17,4 +17,6 @@ class CurotecController < ApplicationController
   def career_job
     @jobs = Career.find(params[:format])
   end
+  def sitemap
+  end
 end

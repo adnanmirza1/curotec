@@ -6,7 +6,7 @@ class CareersController < ApplicationController
   def create
     @career = Career.new(career_params)
     if @career.save 
-      redirect_to root_path
+      redirect_to admin_careers_path
     else
       render :new
     end
