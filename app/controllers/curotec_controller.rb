@@ -21,4 +21,6 @@ class CurotecController < ApplicationController
   end
   def policy
   end
+  def privacy
+  end
 end
