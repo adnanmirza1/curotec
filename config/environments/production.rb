@@ -83,6 +83,20 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
   config.action_mailer.default_url_options = { :host => 'igknighttech.herokuapp.com' }
 
+   # Use SMTP for sending emails
+   config.action_mailer.delivery_method = :smtp
+
+   # SMTP settings for your email provider (replace these with your actual SMTP settings)
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'gmail.com',
+    user_name:            'farhanahmed2297@gmail.com',
+    password:             'tutm sbnn swds ipcr',
+    authentication:       'plain',
+    enable_starttls_auto: true
+  }
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
