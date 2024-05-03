@@ -6,6 +6,6 @@ class ContactMailer < ApplicationMailer
         @website = website
         @description = description
 
-        mail(to: "info@igknighttech.com", subject: "New Contact Form Submission")
+        mail(to: "farhanahmed2297@gmail.com", subject: "New Contact Form Submission")
     end
 end
