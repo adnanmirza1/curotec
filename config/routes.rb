@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   # get '/', to: 'curotec#'
   # Defines the root path route ("/")
   root "curotec#index"
-  get '/articles/create', to: 'articles#create', as: 'articles_create'
+  post '/articles/create', to: 'articles#create', as: 'articles_create'
   resources :careers
   post '/recruiter/create', to: 'recruiters#create'
 end
