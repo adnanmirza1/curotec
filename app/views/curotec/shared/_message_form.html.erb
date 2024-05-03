@@ -12,7 +12,7 @@
                     <div class="elementor-element elementor-element-c11f4ff elementor-widget elementor-widget-formidable" data-id="c11f4ff" data-element_type="widget" data-settings="{&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;}" data-widget_type="formidable.default">
                     <div class="elementor-widget-container">
                         <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_13_container" data-token="3c8aadb4d24ba46daecb32dbec642765">
-                            <%= form_with(url: articles_create_path, method: :get, class: "frm-show-form") do |form| %>
+                            <%= form_with(url: articles_create_path, method: :post, class: "show-form") do |form| %>
                                 <div class="frm_form_fields">
                                 <fieldset>
                                     <legend class="frm_screen_reader">Request for Service</legend>
@@ -30,7 +30,7 @@
                                         Full name
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_field :name, data: { reqmsg: "This field cannot be blank.", invmsg: "Text is invalid" }, aria: { required: "true", invalid: "false" } %>
+                                        <%= form.text_field :name, data: { reqmsg: "This field cannot be blank.", invmsg: "Text is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field" %>
                                     </div>
                             
                                     <div id="frm_field_117_container" class="frm_form_field form-field frm_required_field frm_inside_container frm6 frm_first">
@@ -38,7 +38,7 @@
                                         Work email
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.email_field :email, data: { reqmsg: "This field cannot be blank.", invmsg: "Email is invalid" }, aria: { required: "true", invalid: "false" } %>
+                                        <%= form.email_field :email, data: { reqmsg: "This field cannot be blank.", invmsg: "Email is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field" %>
                                     </div>
                             
                                     <div id="frm_field_118_container" class="frm_form_field form-field frm_inside_container frm6">
@@ -46,7 +46,7 @@
                                         Phone number
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_field :phone, data: { invmsg: "Please enter a valid phone number" }, aria: { invalid: "false" }, min: "1", max: "99999999999999999", step: "1" %>
+                                        <%= form.text_field :phone, data: { invmsg: "Please enter a valid phone number" }, aria: { invalid: "false" }, min: "1", max: "99999999999999999", step: "1", class: "input-field" %>
                                     </div>
                             
                                     <div id="frm_field_119_container" class="frm_form_field form-field frm_inside_container">
@@ -54,7 +54,7 @@
                                         Website
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_field :website, data: { invmsg: "Text is invalid" }, aria: { invalid: "false" } %>
+                                        <%= form.text_field :website, data: { invmsg: "Text is invalid" }, aria: { invalid: "false" }, class: "input-field" %>
                                     </div>
                             
                                     <div id="frm_field_120_container" class="frm_form_field form-field frm_required_field frm_inside_container">
@@ -62,35 +62,8 @@
                                         How can we help you?
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_area :description, rows: "3", data: { reqmsg: "This field cannot be blank.", invmsg: "Message is invalid" }, aria: { required: "true", invalid: "false" } %>
-                                    </div>
-                            
-                                    <div id="frm_field_121_container" class="frm_form_field form-field frm_none_container frm_half field_captcha">
-                                        <%= form.label "g-recaptcha-response", id: "field_oopoz3_label", class: "frm_primary_label" do %>
-                                        Captcha
-                                        <span class="frm_required" aria-hidden="true"></span>
-                                        <% end %>
-                                        <div id="field_oopoz3" class="frm-g-recaptcha" data-sitekey="6LdPi3ooAAAAABuIk4GJS4sABfDW3WmdCkdJ3Ccm" data-size="invisible" data-theme="light"></div>
-                                    </div>
-                            
-                                    <%= form.hidden_field :item_meta, id: "field_l4w6l", value: "[channel]", data: { frmval: "[channel]", invmsg: "Channel is invalid" } %>
-                                    <%= form.hidden_field :item_meta, id: "field_6fru", value: "[channeldrilldown1]", data: { frmval: "[channeldrilldown1]", invmsg: "Channel Drilldown 1 is invalid" } %>
-                                    <%= form.hidden_field :item_meta, id: "field_8g092", value: "[channeldrilldown2]", data: { frmval: "[channeldrilldown2]", invmsg: "Channel Drilldown 2 is invalid" } %>
-                                    <%= form.hidden_field :item_meta, id: "field_ywcf9", value: "[channeldrilldown3]", data: { frmval: "[channeldrilldown3]", invmsg: "Channel Drilldown 3 is invalid" } %>
-                                    <%= form.hidden_field :item_meta, id: "field_byryz", value: "[landingpage]", data: { frmval: "[landingpage]", invmsg: "Landing Page is invalid" } %>
-                                    <%= form.hidden_field :item_meta, id: "field_c0rht", value: "[landingpagegroup]", data: { frmval: "[landingpagegroup]", invmsg: "Landing Page Group is invalid" } %>
-                                    <%= form.hidden_field :item_meta, id: "field_jfg4m", value: "/contact/", data: { frmval: "/contact/", invmsg: "Form Submission URL is invalid" } %>
-                                    <%= form.hidden_field :item_key, value: "" %>
-                            
-                                    <div class="frm__65844faacafd3">
-                                        <%= form.label :frm_email_13 do %>
-                                        If you are human, leave this field blank.
-                                        <% end %>
-                                        <%= form.text_field :frm__65844faacafd3, id: "frm_email_13", class: "frm_verify", autocomplete: "false" %>
-                                    </div>
-                            
-                                    <%= form.hidden_field :frm_state, value: "Fj4D9d7GOjQYuanLPaAzDT8hJF8BwUC3pU0RovDEgNk=" %>
-                            
+                                        <%= form.text_area :description, rows: "3", data: { reqmsg: "This field cannot be blank.", invmsg: "Message is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field" %>
+                                    </div>                            
                                     <div class="frm_submit">
                                         <%= form.button "Request a Quote", type: "submit", class: "frm_button_submit frm_final_submit", formnovalidate: "formnovalidate" %>
                                     </div>
@@ -107,3 +80,31 @@
         </section>
     </div>
 </div>
+<style>
+.input-field {
+    padding: 10px;
+}
+
+.input-field:focus + label {
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.input-field').on('focus', function() {
+            $(this).prev('label').css({
+                'font-size': '12px',
+                'transform': 'translateY(-15px)'
+            });
+        });
+
+        $('.input-field').on('blur', function() {
+            if (!$(this).val()) {
+                $(this).prev('label').removeAttr('style');
+            }
+        });
+    });
+</script>
