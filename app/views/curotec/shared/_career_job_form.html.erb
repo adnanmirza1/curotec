@@ -22,7 +22,7 @@
     <div class="form-row d-flex justify-content-between info-marg">
       <div class="form-group col-md-6">
         <%= form.label :current_job_title, "Current Job Title <span>*</span>".html_safe %>
-        <%= form.select :job_title, options_for_select(["Fresher", "Project Lead", "Project Manager"]), { prompt: "-None-" }, class: "form-control input-skill" %>
+        <%= form.select :job_title, options_for_select(["Internship", "Fresher"," Junior Developer","Software Engineer","Senior Software Engineer", "Project Lead", "Project Manager"]), { prompt: "-None-" }, class: "form-control input-skill" %>
       </div>
       <div class="form-group col-md-6">
         <%= form.label :skill_set, "Skill Set <span>*</span>".html_safe %>
@@ -45,7 +45,8 @@
         <%= form.select :education_details, options_for_select(["BSIT", "BSCS", "B.SC"]), { prompt: "-None-" }, class: "form-control input-skill" %>
       </div>
     </div>
-    <div class="form-row d-flex justify-content-between info-marg">
+    <div class="form-row d-flex flex-column justify-content-between info-marg">
+    <p>Resume/Cover Letter<p>
     <%= form.file_field :avatar %>
     </div>
     <%= form.submit "Submit", class: "btn btn-primary", style: "margin-top: 47px;" %>
