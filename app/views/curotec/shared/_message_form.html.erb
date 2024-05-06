@@ -30,7 +30,7 @@
                                         Full name
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_field :name, data: { reqmsg: "This field cannot be blank.", invmsg: "Text is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field" %>
+                                        <%= form.text_field :name, data: { reqmsg: "This field cannot be blank.", invmsg: "Text is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field1" %>
                                     </div>
                             
                                     <div id="frm_field_117_container" class="frm_form_field form-field frm_required_field frm_inside_container frm6 frm_first">
@@ -38,7 +38,7 @@
                                         Work email
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.email_field :email, data: { reqmsg: "This field cannot be blank.", invmsg: "Email is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field" %>
+                                        <%= form.email_field :email, data: { reqmsg: "This field cannot be blank.", invmsg: "Email is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field1" %>
                                     </div>
                             
                                     <div id="frm_field_118_container" class="frm_form_field form-field frm_inside_container frm6">
@@ -46,7 +46,7 @@
                                         Phone number
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_field :mobile, data: { invmsg: "Please enter a valid mobile number" }, aria: { invalid: "false" }, min: "1", max: "99999999999999999", step: "1", class: "input-field" %>
+                                        <%= form.text_field :mobile, data: { invmsg: "Please enter a valid mobile number" }, aria: { invalid: "false" }, min: "1", max: "99999999999999999", step: "1", class: "input-field1" %>
                                     </div>
                             
                                     <div id="frm_field_119_container" class="frm_form_field form-field frm_inside_container">
@@ -54,7 +54,7 @@
                                         Website
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_field :website, data: { invmsg: "Text is invalid" }, aria: { invalid: "false" }, class: "input-field" %>
+                                        <%= form.text_field :website, data: { invmsg: "Text is invalid" }, aria: { invalid: "false" }, class: "input-field1" %>
                                     </div>
                             
                                     <div id="frm_field_120_container" class="frm_form_field form-field frm_required_field frm_inside_container">
@@ -62,7 +62,7 @@
                                         How can we help you?
                                         <span class="frm_required"></span>
                                         <% end %>
-                                        <%= form.text_area :description, rows: "3", data: { reqmsg: "This field cannot be blank.", invmsg: "Message is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field" %>
+                                        <%= form.text_area :description, rows: "3", data: { reqmsg: "This field cannot be blank.", invmsg: "Message is invalid" }, aria: { required: "true", invalid: "false" }, class: "input-field1" %>
                                     </div>                            
                                     <div class="frm_submit">
                                         <%= form.button "Request a Quote", type: "submit", class: "frm_button_submit frm_final_submit", formnovalidate: "formnovalidate" %>
@@ -81,11 +81,11 @@
     </div>
 </div>
 <style>
-.input-field {
+.input-field1 {
     padding: 10px;
 }
 
-.input-field:focus + label {
+.input-field1:focus + label {
     font-size: 12px;
     transform: translateY(-20px);
 }
@@ -94,14 +94,14 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('.input-field').on('focus', function() {
+        $('.input-field1').on('focus', function() {
             $(this).prev('label').css({
                 'font-size': '12px',
                 'transform': 'translateY(-15px)'
             });
         });
 
-        $('.input-field').on('blur', function() {
+        $('.input-field1').on('blur', function() {
             if (!$(this).val()) {
                 $(this).prev('label').removeAttr('style');
             }
