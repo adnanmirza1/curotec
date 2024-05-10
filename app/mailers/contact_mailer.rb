@@ -6,7 +6,7 @@ class ContactMailer < ApplicationMailer
         @website = website
         @description = description
 
-        mail(to: "info@igknighttech.com", subject: "New Contact Form Submission")
+        mail(to: "support@igknighttech.com", subject: "Contact-#{@name}")
     end
     def recruiter_send_email(name, email, mobile, education_details, current_salary, expected_salary, skill_set, job_title, avatar)
         @name = name
@@ -21,6 +21,6 @@ class ContactMailer < ApplicationMailer
         # Generate the PDF URL
         @pdf_url = rails_blob_url(avatar, disposition: "attachment")
 
-        mail(to: "info@igknighttech.com", subject: "New Contact Form Submission")
+        mail(to: "support@igknighttech.com", subject: "Position-#{@skill_set}")
     end
 end
