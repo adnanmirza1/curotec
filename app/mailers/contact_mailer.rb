@@ -6,7 +6,7 @@ class ContactMailer < ApplicationMailer
         @website = website
         @description = description
 
-        mail(to: "farhanahmed2297@gmail.com", subject: "Contact-#{@name}")
+        mail(to: "support@igknighttech.com", subject: "Contact-#{@name}")
     end
     def recruiter_send_email(name, email, mobile, education_details, current_salary, expected_salary, skill_set, job_title, avatar)
         @name = name
