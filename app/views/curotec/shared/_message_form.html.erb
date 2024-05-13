@@ -1,3 +1,20 @@
+<script>
+    $(document).ready(function() {
+        $('.input-field1').on('focus', function() {
+            $(this).prev('label').css({
+                'font-size': '12px',
+                'transform': 'translateY(-15px)'
+            });
+        });
+
+        $('.input-field1').on('blur', function() {
+            if (!$(this).val()) {
+                $(this).prev('label').removeAttr('style');
+            }
+        });
+    });
+</script>
+
 <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9029d75 elementor-invisible" data-id="9029d75" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;}">
     <div class="elementor-widget-wrap elementor-element-populated">
         <section class="elementor-section elementor-inner-section elementor-element elementor-element-b49ebfc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b49ebfc" data-element_type="section">
@@ -91,20 +108,4 @@
 }
 
 </style>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('.input-field1').on('focus', function() {
-            $(this).prev('label').css({
-                'font-size': '12px',
-                'transform': 'translateY(-15px)'
-            });
-        });
 
-        $('.input-field1').on('blur', function() {
-            if (!$(this).val()) {
-                $(this).prev('label').removeAttr('style');
-            }
-        });
-    });
-</script>

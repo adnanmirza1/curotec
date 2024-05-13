@@ -14,6 +14,7 @@
     <%= render 'shared/styles' %>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
     // Define your function
     function myFunction() {
@@ -35,6 +36,7 @@
     </a>
     <div class="hfeed site" id="page">
        <%# render 'shared/header' %>
+       <%= render 'curotec/shared/flash_messages' if flash.any? %>
       <%= yield %>
       <%= render 'shared/footer' %>
     </div>
