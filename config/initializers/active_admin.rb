@@ -4,6 +4,20 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
+
+    # config.authentication_method = :authenticate_admin
+    # config.current_user_method = :current_admin_user
+
+    config.before_action :authenticate_admin!
+
+    def authenticate_admin!
+      authenticate_or_request_with_http_basic('Admin Login') do |username, password|
+        username == 'igknight' && password == 'password123'
+      end
+    end
+
+
+
   config.site_title = "Project"
 
   # Set the link url for the title. For example, to take
