@@ -1,0 +1,26 @@
+<div class="flash-msg position-fixed top-0 start-50 translate-middle-x w-50 d-flex justify-content-center">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %> alert-dismissible mb-1" style = "width: 50%;">
+      <%= value.to_s.html_safe %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style = "background-color: #f8d7da; border: none;"></button>
+    </div>
+  <% end %>
+</div>
+
+<style>
+  .flash-msg {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    z-index: 1000; /* Ensure the alert appears above other elements */
+  }
+
+  .flash-msg .alert {
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #f8d7da; /* Red background color for danger alerts */
+    color: #721c24; /* Dark text color for danger alerts */
+  }
+</style>
