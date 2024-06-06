@@ -6,7 +6,7 @@ class CareersController < ApplicationController
   def create
     @career = Career.new(career_params)
     if @career.save 
-      redirect_to admin_career_path, notice: 'Your application has been sent!'
+      redirect_to admin_careers_path, notice: 'Your application has been sent!'
     else
       render :new, notice: 'Your request could not be sent.'
     end
