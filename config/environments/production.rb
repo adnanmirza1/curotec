@@ -96,6 +96,7 @@ Rails.application.configure do
     authentication:       'plain',
     enable_starttls_auto: true
   }
+  
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
