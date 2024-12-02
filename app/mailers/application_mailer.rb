@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "support@igknighttech.com"
+  default from: "info@igknighttech.com"
   layout "mailer"
 end

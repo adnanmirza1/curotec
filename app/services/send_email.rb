@@ -10,7 +10,7 @@ class SendEmail
     
         def sendmail
             from = Email.new(email: 'info@igknighttech.com')
-            to = Email.new(email: 'support@igknighttech.com')
+            to = Email.new(email: 'info@igknighttech.com')
             subject = 'Queries from your website:IGKNIGHTECH'
             html_content = File.read('app/views/support_mail_mailer/support_mail.html.erb')
             text_content = File.read('app/views/support_mail_mailer/support_mail.text.erb')
