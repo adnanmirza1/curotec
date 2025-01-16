@@ -155,14 +155,15 @@
                                           decoding="async"
                                           width="640"
                                           height="87"
-                                          src="<%= asset_path('clutch_reviews.webp') %>
+                                          src="<%= asset_path('clutch_reviews.webp') %>"
                                           class="attachment-medium_large size-medium_large"
-                                          alt
+                                          alt="loading"
                                           srcset="
-                                          assets/clutch_review.webp            640w,
-                                          assets/clutch-reviews-large.wabp     300w,
+                                             <%= asset_path('clutch_reviews.webp') %> 640w,
+                                             <%= asset_path('clutch_reviews.webp') %> 300w,
                                           "
-                                          sizes="(max-width: 640px) 100vw, 640px" />
+                                          sizes="(max-width: 640px) 100vw, 640px"
+                                       />
                                     </div>
                                  </figure>
                                  <figure class="gallery-item">
@@ -172,7 +173,7 @@
                                           decoding="async"
                                           width="12"
                                           height="370"
-                                          src="<%= image_tag "line.webp" %>"
+                                          src="<%= asset_path("line.webp") %>"
                                           class="attachment-medium_large size-medium_large"
                                           alt />
                                     </div>
@@ -184,7 +185,7 @@
                                           decoding="async"
                                           width="130"
                                           height="50"
-                                          src="<%= image_tag "comcast.webp" %>"
+                                          src="<%= asset_path('comcast.webp') %>"
                                           class="attachment-medium_large size-medium_large"
                                           alt />
                                     </div>
@@ -197,7 +198,7 @@
                                           decoding="async"
                                           width="650"
                                           height="50"
-                                          src="<%= image_tag "automattic-e.webp" %>"
+                                          src="<%= asset_path("automattic-e.webp") %>"
                                           class="attachment-medium_large size-medium_large"
                                           alt />
                                     </div>
@@ -210,12 +211,12 @@
                                           decoding="async"
                                           width="76"
                                           height="50"
-                                          src="<%= image_tag "gtt-e.webp" %>"
+                                          src="<%= asset_path("gtt-e.webp") %>"
                                           class="attachment-medium_large size-medium_large"
                                           alt
                                           srcset="
-                                          assets/gtt-e.webp       76w,
-                                          assets/gtt-e-large.webp 768w,
+                                          <%= asset_path('gtt-e.webp') %>   76w,
+                                          <%= asset_path('gtt-e-large.webp') %> 768w,
                                           "
                                           sizes="(max-width: 76px) 100vw, 76px" />
                                     </div>
@@ -228,7 +229,7 @@
                                           decoding="async"
                                           width="264"
                                           height="50"
-                                          src="<%= image_tag "ironclad.webp" %>"
+                                          src="<%= asset_path("ironclad.webp") %>"
                                           class="attachment-medium_large size-medium_large"
                                           alt />
                                     </div>
@@ -1704,7 +1705,7 @@
                                  content: " ";
                                  width: 99%;
                                  height: 100%;
-                                 background-image: url("wp-content/uploads/2023/07/Communication.svg");
+                                 background-image: url("assets/Communication.png");
                                  background-repeat: no-repeat;
                                  position: absolute;
                                  left: 20px;
@@ -2448,7 +2449,7 @@
                                                                            class="elementor-widget-container">
                                                                            <img
                                                                               decoding="async"
-                                                                              src="<%= image_tag "Communication.svg" %>"
+                                                                              src="<%= asset_path("Communication.png") %>"
                                                                               title="Communication"
                                                                               alt="Communication"
                                                                               loading="lazy" />
@@ -2534,7 +2535,7 @@
                                                                            class="elementor-widget-container">
                                                                            <img
                                                                               decoding="async"
-                                                                              src="<%= image_tag "Experts.svg" %>"
+                                                                              src="<%= asset_path("Experts.svg") %>"
                                                                               title="Experts"
                                                                               alt="Experts"
                                                                               loading="lazy" />
@@ -2631,7 +2632,7 @@
                                                                            class="elementor-widget-container">
                                                                            <img
                                                                               decoding="async"
-                                                                              src="https://www..com/wp-content/uploads/2023/07/Partner.svg?w=40"
+                                                                              src="<%= asset_path('Partner.svg')%>"
                                                                               title="Partner"
                                                                               alt="Partner"
                                                                               loading="lazy" />
@@ -2716,7 +2717,7 @@
                                                                            class="elementor-widget-container">
                                                                            <img
                                                                               decoding="async"
-                                                                              src="<%= image_tag "Employees.svg" %>"
+                                                                              src="<%= asset_path("Employees.svg") %>"
                                                                               title="Employees"
                                                                               alt="Employees"
                                                                               loading="lazy" />
@@ -2801,7 +2802,7 @@
                                                                            class="elementor-widget-container">
                                                                            <img
                                                                               decoding="async"
-                                                                              src="<%= image_tag "Experts-1.svg" %>"
+                                                                              src="<%= asset_path("Experts-1.svg") %>"
                                                                               title="Experts"
                                                                               alt="Experts"
                                                                               loading="lazy" />
