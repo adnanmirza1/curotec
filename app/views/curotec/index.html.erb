@@ -161,19 +161,16 @@
                                         <figure
                                         class="elementor-image-box-img"
                                         >
-                                        <%= image_tag("laravel.png", alt: "Description", class: "attachment-full size-full wp-image-9429") %>
+                                        <%= image_tag("laravel.png", alt: "Description", class: "attachment-full size- wp-image-9429") %>
                                         <!--
                                         <img
                                             decoding="async"
                                             width="188"
                                             height="194"
-                                            src="https://www.curotec.com/wp-content/uploads/2023/07/laravel.png"
+                                            src="<%= image_tag "laravel.png"%>"
                                             class="attachment-full size-full wp-image-9425"
                                             alt=""
-                                            srcset="
-                                            https://www.curotec.com/wp-content/uploads/2023/07/laravel.png                188w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/laravel.png?resize=768,792 768w
-                                            "
+                                            srcset="<%= image_tag "laravel.png"%>"
                                             sizes="(max-width: 188px) 100vw, 188px"
                                         /> -->
                                         </figure>
@@ -262,17 +259,17 @@
                                             decoding="async"
                                             width="195"
                                             height="194"
-                                            src="https://www.curotec.com/wp-content/uploads/2023/07/python.png"
+                                            src="<%= image_tag "python.png" %>"
                                             class="attachment-full size-full wp-image-9426"
                                             alt=""
                                             srcset="
-                                            https://www.curotec.com/wp-content/uploads/2023/07/python.png                   195w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/python.png?resize=130,130    130w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/python.png?resize=300,300    300w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/python.png?resize=768,764    768w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/python.png?resize=1024,1024 1024w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/python.png?resize=1536,1536 1536w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/python.png?resize=2048,2048 2048w
+                                            assets/python-small-1 195w,
+                                            assets/python-small-2 130w,
+                                            assets/python-small-3 300w,
+                                            assets/python-large-1 768w,
+                                            assets/python-large-2 1024w,
+                                            assets/python-large-3 1536w,
+                                            assets/python-large-4 2048w
                                             "
                                             sizes="(max-width: 195px) 100vw, 195px"
                                         />
@@ -325,12 +322,12 @@
                                             decoding="async"
                                             width="144"
                                             height="147"
-                                            src="https://www.curotec.com/wp-content/uploads/2023/09/openai-logo.png"
+                                            src="<%= image_tag "openai-logo (1)" %>"
                                             class="attachment-full size-full wp-image-16492"
                                             alt=""
                                             srcset="
-                                            https://www.curotec.com/wp-content/uploads/2023/09/openai-logo.png                144w,
-                                            https://www.curotec.com/wp-content/uploads/2023/09/openai-logo.png?resize=768,784 768w
+                                            assets/openai-logo (1)   144w,
+                                            assets/openai-logo-large 768w,
                                             "
                                             sizes="(max-width: 144px) 100vw, 144px"
                                         />
@@ -383,12 +380,12 @@
                                             decoding="async"
                                             width="216"
                                             height="134"
-                                            src="https://www.curotec.com/wp-content/uploads/2023/09/image-4.png"
+                                            src=<%= image_tag "node-js" %>
                                             class="attachment-full size-full wp-image-16493"
                                             alt=""
                                             srcset="
-                                            https://www.curotec.com/wp-content/uploads/2023/09/image-4.png                216w,
-                                            https://www.curotec.com/wp-content/uploads/2023/09/image-4.png?resize=768,476 768w
+                                            assets/node-js       216w,
+                                            assets/node-js-large 768w
                                             "
                                             sizes="(max-width: 216px) 100vw, 216px"
                                         />
@@ -441,12 +438,12 @@
                                             decoding="async"
                                             width="190"
                                             height="112"
-                                            src="https://www.curotec.com/wp-content/uploads/2023/07/aws.png"
+                                            src=<%= image_tag "aws-1" %>
                                             class="attachment-full size-full wp-image-9424"
                                             alt=""
                                             srcset="
-                                            https://www.curotec.com/wp-content/uploads/2023/07/aws.png                190w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/aws.png?resize=768,452 768w
+                                            assets/aws-1      190w,
+                                            assets/aws-large  768w
                                             "
                                             sizes="(max-width: 190px) 100vw, 190px"
                                         /> -->
@@ -499,12 +496,12 @@
                                             decoding="async"
                                             width="171"
                                             height="194"
-                                            src="https://www.curotec.com/wp-content/uploads/2023/07/react.png"
+                                            src=<%= image_tag "react" %>
                                             class="attachment-full size-full wp-image-9427"
                                             alt=""
                                             srcset="
-                                            https://www.curotec.com/wp-content/uploads/2023/07/react.png                171w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/react.png?resize=768,871 768w
+                                            assets/react       171w,
+                                            assets/react-large 768w
                                             "
                                             sizes="(max-width: 171px) 100vw, 171px"
                                         /> -->
@@ -557,12 +554,12 @@
                                             decoding="async"
                                             width="184"
                                             height="173"
-                                            src="https://www.curotec.com/wp-content/uploads/2023/07/vue-js.png"
+                                            src=<%= image_tag "vue-js" %>
                                             class="attachment-full size-full wp-image-9428"
                                             alt=""
                                             srcset="
-                                            https://www.curotec.com/wp-content/uploads/2023/07/vue-js.png                184w,
-                                            https://www.curotec.com/wp-content/uploads/2023/07/vue-js.png?resize=768,722 768w
+                                            assets/vue-js       184w,
+                                            assets/vue-js-large 768w
                                             "
                                             sizes="(max-width: 184px) 100vw, 184px"
                                         /> -->
@@ -818,7 +815,7 @@
                                             decoding="async"
                                             width="72"
                                             height="72"
-                                            src = "<%= asset_path('Philadelphia-100-Curotec.png.svg')%>"
+                                            src = "<%= asset_path('Philadelphia-100-igknighttech.png.svg')%>"
                                             class="attachment-full size-full wp-image-10326"
                                             alt=""
                                         />
@@ -1147,7 +1144,7 @@
                                                                 class="elementor-heading-title elementor-size-default"
                                                             >
                                                                 <a
-                                                                href="https://www.curotec.com/insights/choosing-the-best-python-gui-libraries-an-essential-guide-for-developers/"
+                                                                href="#"
                                                                 >Choosing
                                                                 the Best
                                                                 Python GUI
@@ -1723,7 +1720,7 @@
                                             >
                                             <img
                                                 decoding="async"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/07/Stars.svg?w=153"
+                                                src="#"
                                                 title="Stars"
                                                 alt="Stars"
                                                 loading="lazy"
@@ -1759,7 +1756,7 @@
                                             >
                                             <img
                                                 decoding="async"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/07/Arrow_Down_SM1.svg?w=20"
+                                                src="
                                                 title="Arrow_Down_SM[1]"
                                                 alt="Arrow_Down_SM[1]"
                                                 loading="lazy"
@@ -1803,17 +1800,17 @@
                                                 decoding="async"
                                                 width="112"
                                                 height="112"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/07/kate.png"
+                                                src="<%= image_tag "kate" %>"
                                                 class="attachment-full size-full wp-image-9197"
                                                 alt=""
                                                 srcset="
-                                                https://www.curotec.com/wp-content/uploads/2023/07/kate.png                   112w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/kate.png?resize=130,130    130w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/kate.png?resize=300,300    300w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/kate.png?resize=768,768    768w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/kate.png?resize=1024,1024 1024w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/kate.png?resize=1536,1536 1536w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/kate.png?resize=2048,2048 2048w
+                                                assets/kate            112w,
+                                                assets/kate-large      130w,
+                                                assets/kate-large-1    300w,
+                                                assets/kate-large-2    768w,
+                                                asstes/kate-large-2    1024w,
+                                                assets/kate-large-2    1536w,
+                                                assets/kate-large-2    2048w
                                                 "
                                                 sizes="(max-width: 112px) 100vw, 112px"
                                             />
@@ -1834,17 +1831,17 @@
                                                 decoding="async"
                                                 width="112"
                                                 height="112"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/07/edward.png"
+                                                src="<%= image_tag "edward" %>"
                                                 class="attachment-full size-full wp-image-9198"
                                                 alt=""
                                                 srcset="
-                                                https://www.curotec.com/wp-content/uploads/2023/07/edward.png                   112w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/edward.png?resize=130,130    130w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/edward.png?resize=300,300    300w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/edward.png?resize=768,768    768w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/edward.png?resize=1024,1024 1024w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/edward.png?resize=1536,1536 1536w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/edward.png?resize=2048,2048 2048w
+                                                asstes/edward          112w,
+                                                asstes/edward-large    130w,
+                                                assets/edward-large-1  300w,
+                                                assets/edward-large-2  768w,
+                                                assets/edward-large-2  1024w,
+                                                assets/edward-large-2  1536w,
+                                                assets/edward-large-2  2048w
                                                 "
                                                 sizes="(max-width: 112px) 100vw, 112px"
                                             />
@@ -1865,17 +1862,17 @@
                                                 decoding="async"
                                                 width="112"
                                                 height="112"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png"
+                                                src="<%= image_tag "dhiren" %>"
                                                 class="attachment-full size-full wp-image-9199"
                                                 alt=""
                                                 srcset="
-                                                https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png                   112w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png?resize=130,130    130w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png?resize=300,300    300w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png?resize=768,768    768w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png?resize=1024,1024 1024w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png?resize=1536,1536 1536w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/dhiren.png?resize=2048,2048 2048w
+                                                assets/dhiren          112w,
+                                                assets/dhiren-large    130w,
+                                                assets/dhiren-large-1  300w,
+                                                assets/dhiren-large-2  768w,
+                                                asstes/dhiren-large-3  1024w,
+                                                asstes/dhiren-large-4  1536w,
+                                                asstes/dhiren-large-5  2048w
                                                 "
                                                 sizes="(max-width: 112px) 100vw, 112px"
                                             />
@@ -1893,7 +1890,7 @@
                                             >
                                             <img
                                                 decoding="async"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/09/matt-summers.png?w=130&#038;h=130&#038;crop=1"
+                                                src="<%= image_tag "matt-summers" %>"
                                                 title="matt-summers"
                                                 alt="matt-summers"
                                                 loading="lazy"
@@ -1915,17 +1912,17 @@
                                                 decoding="async"
                                                 width="112"
                                                 height="112"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png"
+                                                src="<%= image_tag "pam" %>"
                                                 class="attachment-full size-full wp-image-9201"
                                                 alt=""
                                                 srcset="
-                                                https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png                   112w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png?resize=130,130    130w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png?resize=300,300    300w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png?resize=768,768    768w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png?resize=1024,1024 1024w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png?resize=1536,1536 1536w,
-                                                https://www.curotec.com/wp-content/uploads/2023/07/pam-1.png?resize=2048,2048 2048w
+                                                assets/pam          112w,
+                                                assets/pam-large    130w,
+                                                assets/pam-large-1  300w,
+                                                assets/pam-large-2  768w,
+                                                assets/pam-large-3  1024w,
+                                                assets/pam-large-4  1536w,
+                                                assets/pam-large-5  2048w
                                                 "
                                                 sizes="(max-width: 112px) 100vw, 112px"
                                             />
@@ -1949,17 +1946,17 @@
                                                 decoding="async"
                                                 width="113"
                                                 height="112"
-                                                src="https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png"
+                                                src="<%= image_tag "add-new-image" %>"
                                                 class="attachment-full size-full wp-image-9202"
                                                 alt=""
                                                 srcset="
-                                                    https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png                   113w,
-                                                    https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png?resize=130,130    130w,
-                                                    https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png?resize=300,300    300w,
-                                                    https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png?resize=768,761    768w,
-                                                    https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png?resize=1024,1024 1024w,
-                                                    https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png?resize=1536,1536 1536w,
-                                                    https://www.curotec.com/wp-content/uploads/2023/07/add-new-image.png?resize=2048,2048 2048w
+                                                    assets/add-new-image            113w,
+                                                    assets/add-new-image-large      130w,
+                                                    assets/add-new-image-large-1    300w,
+                                                    assets/add-new-image-large-2    768w,
+                                                    assets/add-new-image-large-3    1024w,
+                                                    assets/add-new-image-large-4    1536w,
+                                                    assets/add-new-image-large-5    2048w
                                                 "
                                                 sizes="(max-width: 113px) 100vw, 113px"
                                                 />
