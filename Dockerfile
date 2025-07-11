@@ -19,10 +19,13 @@ RUN apk add --update --virtual \
     curl \
     && rm -rf /var/cache/apk/*
 
-# Install modern Node.js (v18) and Yarn
-RUN apk add --update --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/v3.17/main \
-    nodejs=18.15.0-r1 \
-    npm=18.15.0-r1 \
+# Remove existing Node.js and npm if they exist
+RUN apk del nodejs npm || true
+
+# Install Node.js 18 from the edge repository
+RUN apk add --update --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main \
+    nodejs=18.20.2-r0 \
+    npm=18.20.2-r0 \
     && npm install -g yarn
 
 WORKDIR /app
