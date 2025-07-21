@@ -1,995 +1,306 @@
-<div
-data-elementor-type="footer"
-data-elementor-id="471"
-class="elementor elementor-471 elementor-location-footer"
-data-elementor-post-type="elementor_library"
->
-<section
-  class="elementor-section elementor-top-section elementor-element elementor-element-b6245c8 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-  data-id="b6245c8"
-  data-element_type="section"
-  data-settings='{"background_background":"classic"}'
->
-  <div class="elementor-container elementor-column-gap-default">
-    <div
-      class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4f4a5a9"
-      data-id="4f4a5a9"
-      data-element_type="column"
-      data-settings='{"_ob_column_hoveranimator":"no"}'
-    >
-      <div class="elementor-widget-wrap elementor-element-populated">
-        <section
-          class="elementor-section elementor-inner-section elementor-element elementor-element-3373785 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-          data-id="3373785"
-          data-element_type="section"
-        >
-          <div class="elementor-container elementor-column-gap-default">
-            <div
-              class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-223cdae"
-              data-id="223cdae"
-              data-element_type="column"
-              data-settings='{"_ob_column_hoveranimator":"no"}'
-            >
-              <div
-                class="elementor-widget-wrap elementor-element-populated"
-              >
-                <div
-                  class="elementor-element elementor-element-76aa282 elementor-widget elementor-widget-heading"
-                  data-id="76aa282"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h4
-                      class="elementor-heading-title elementor-size-default"
-                    >
-                      Headquarters
-                    </h4>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-2e1c19e elementor-widget elementor-widget-text-editor"
-                  data-id="2e1c19e"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      Igknight Tech<br />4 Gibbs Street<br />Auburn<br />NSW Sydney, 
-                      Australia
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-73523ad elementor-widget elementor-widget-heading"
-                  data-id="73523ad"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h4
-                      class="elementor-heading-title elementor-size-default"
-                    >
-                      Australia
+<style>
+/* Footer Base */
+.site-footer {
+  background: #1a2540;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 48px 0 0 0;
+}
+.site-footer .footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+.site-footer .footer-col {
+  min-width: 200px;
+  flex: 1 1 220px;
+}
+.site-footer .footer-company {
+  min-width: 160px;
+  flex: 1 1 180px;
+}
+.site-footer .footer-services {
+  min-width: 220px;
+  flex: 2 1 320px;
+}
+.site-footer .footer-news {
+  min-width: 220px;
+  flex: 1 1 260px;
+}
+.site-footer .footer-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.site-footer .footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+.site-footer .footer-list li a {
+  color: #cfd8e3;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.site-footer .footer-list li a:hover {
+  color: #ffc72c;
+}
+.site-footer .footer-btn {
+  display: inline-block;
+  background: #ffc72c;
+  color: #1a2540;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 24px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.site-footer .footer-capabilities {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 24px 0 12px 0;
+}
+.site-footer .footer-news-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.site-footer .footer-news-date {
+  color: #ffc72c;
+  font-size: 12px;
+}
+.site-footer .footer-news-viewall {
+  color: #ffc72c;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.site-footer .footer-search-form {
+  margin-top: 24px;
+  display: flex;
+}
+.site-footer .footer-search-input {
+  padding: 8px 12px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 70%;
+}
+.site-footer .footer-search-btn {
+  background: #ffc72c;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  padding: 0 16px;
+  color: #1a2540;
+  font-size: 18px;
+  cursor: pointer;
+}
+.site-footer .footer-divider {
+  margin: 40px auto 20px;
+  border: 0;
+  height: 1px;
+  background: #2d3956;
+  width: 90%;
+}
+.site-footer .footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 24px 0;
+}
+.site-footer .footer-bottom-text,
+.site-footer .footer-bottom-links {
+  font-size: 14px;
+  color: #cfd8e3;
+}
+.site-footer .footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.site-footer .footer-social a {
+  color: #cfd8e3;
+  margin-right: 8px;
+  font-size: 18px;
+}
+.site-footer .footer-social a:last-child {
+  margin-right: 0;
+}
+.site-footer .footer-bottom-links a {
+  color: #cfd8e3;
+  text-decoration: none;
+  margin: 0 16px 0 0;
+}
+.site-footer .footer-bottom-links a:hover {
+  color: #ffc72c;
+}
+.site-footer .footer-bottom-links a:not(:last-child)::after {
+  content: "|";
+  margin-left: 16px;
+  color: #cfd8e3;
+}
+@media (max-width: 900px) {
+  .site-footer .footer-main {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .site-footer .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 32px 8px 0 8px;
+  }
+  .site-footer .footer-main {
+    gap: 16px;
+  }
+  .site-footer .footer-bottom {
+    padding: 0 0 16px 0;
+  }
+}
+</style>
 
-                    </h4>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-6e2fd15 elementor-widget elementor-widget-text-editor"
-                  data-id="6e2fd15"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>  
-                      Igknight Tech<br />4 Gibbs street<br />Auburn NSW Sydney,<br />Australia
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-d6e8d6a elementor-widget elementor-widget-heading"
-                  data-id="d6e8d6a"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h4
-                      class="elementor-heading-title elementor-size-default"
-                    >
-                      Phone
-                    </h4>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-06ec429 elementor-widget elementor-widget-text-editor"
-                  data-id="06ec429"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p><a href="https://wa.me/61420694767">+61 420 694 767</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f28e35e"
-              data-id="f28e35e"
-              data-element_type="column"
-              data-settings='{"_ob_column_hoveranimator":"no"}'
-            >
-              <div
-                class="elementor-widget-wrap elementor-element-populated"
-              >
-                <div
-                  class="elementor-element elementor-element-15e4606 elementor-widget elementor-widget-heading"
-                  data-id="15e4606"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h4
-                      class="elementor-heading-title elementor-size-default"
-                    >
-                      Company
-                    </h4>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-1ad6059 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
-                  data-id="1ad6059"
-                  data-element_type="widget"
-                  data-settings='{"layout":"vertical","submenu_icon":{"value":"&lt;i class=\"fas fa-caret-down\"&gt;&lt;\/i&gt;","library":"fa-solid"},"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="nav-menu.default"
-                >
-                  <div class="elementor-widget-container">
-                    <nav
-                      class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none"
-                    >
-                      <ul
-                        id="menu-1-1ad6059"
-                        class="elementor-nav-menu sm-vertical"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-584"
-                        >
-                          <a
-                            href="/"
-                            class="elementor-item menu-link"
-                            >Home</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-585"
-                        >
-                          <a
-                            href="/about-us"
-                            aria-current="page"
-                            class="elementor-item elementor-item-active menu-link"
-                            >About</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"
-                        >
-                          <a
-                            href="/careers"
-                            class="elementor-item menu-link"
-                            >Careers</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-588"
-                        >
-                          <a
-                            href="/insights/"
-                            class="elementor-item menu-link"
-                            >Insights</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-589"
-                        >
-                          <a
-                            href="/contact"
-                            class="elementor-item menu-link"
-                            >Contact Us</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                    <nav
-                      class="elementor-nav-menu--dropdown elementor-nav-menu__container"
-                      aria-hidden="true"
-                    >
-                      <ul
-                        id="menu-2-1ad6059"
-                        class="elementor-nav-menu sm-vertical"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-584"
-                        >
-                          <a
-                            href="https://igknighttech.com/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Home</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-585"
-                        >
-                          <a
-                            href="https://igknighttech.com/about-us/"
-                            aria-current="page"
-                            class="elementor-item elementor-item-active menu-link"
-                            tabindex="-1"
-                            >About</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"
-                        >
-                          <a
-                            href="https://igknighttech.com/careers/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Careers</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-588"
-                        >
-                          <a
-                            href="/insights/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Insights</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-589"
-                        >
-                          <a
-                            href="https://igknighttech.com/contact/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Contact Us</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-15b2b1f elementor-widget elementor-widget-heading"
-                  data-id="15b2b1f"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h4
-                      class="elementor-heading-title elementor-size-default"
-                    >
-                      Capabilities
-                    </h4>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-6466f11 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
-                  data-id="6466f11"
-                  data-element_type="widget"
-                  data-settings='{"layout":"vertical","submenu_icon":{"value":"&lt;i class=\"fas fa-caret-down\"&gt;&lt;\/i&gt;","library":"fa-solid"},"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="nav-menu.default"
-                >
-                  <div class="elementor-widget-container">
-                    <nav
-                      class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none"
-                    >
-                      <ul
-                        id="menu-1-6466f11"
-                        class="elementor-nav-menu sm-vertical"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26827"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Application Development</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-520"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Web Development</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26828"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >AI / ML</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-519"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Staff Augmentation</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                    <nav
-                      class="elementor-nav-menu--dropdown elementor-nav-menu__container"
-                      aria-hidden="true"
-                    >
-                      <ul
-                        id="menu-2-6466f11"
-                        class="elementor-nav-menu sm-vertical"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26827"
-                        >
-                          <a
-                            href="#/services/application-development/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Application Development</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-520"
-                        >
-                          <a
-                            href="#/services/web-development/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Web Development</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26828"
-                        >
-                          <a
-                            href="#/services/ai-ml-development/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >AI / ML</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-519"
-                        >
-                          <a
-                            href="#/services/staff-augmentation/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Staff Augmentation</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f9e19c6"
-              data-id="f9e19c6"
-              data-element_type="column"
-              data-settings='{"_ob_column_hoveranimator":"no"}'
-            >
-              <div
-                class="elementor-widget-wrap elementor-element-populated"
-              >
-                <div
-                  class="elementor-element elementor-element-3643e21 elementor-widget elementor-widget-heading"
-                  data-id="3643e21"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h4
-                      class="elementor-heading-title elementor-size-default"
-                    >
-                      Technologies
-                    </h4>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-146bc0e elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu"
-                  data-id="146bc0e"
-                  data-element_type="widget"
-                  data-settings='{"layout":"vertical","submenu_icon":{"value":"&lt;i class=\"fas fa-caret-down\"&gt;&lt;\/i&gt;","library":"fa-solid"},"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="nav-menu.default"
-                >
-                  <div class="elementor-widget-container">
-                    <nav
-                      class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none"
-                    >
-                      <ul
-                        id="menu-1-146bc0e"
-                        class="elementor-nav-menu sm-vertical"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Ruby on Rails</a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Laravel</a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Vue.js &#038; Nuxt</a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26832"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >React</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >WordPress</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26830"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Python</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26831"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >Nodejs</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26829"
-                        >
-                          <a
-                            href="/services"
-                            class="elementor-item menu-link"
-                            >AWS</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                    <nav
-                      class="elementor-nav-menu--dropdown elementor-nav-menu__container"
-                      aria-hidden="true"
-                    >
-                      <ul
-                        id="menu-2-146bc0e"
-                        class="elementor-nav-menu sm-vertical"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"
-                        >
-                          <a
-                            href="#/services/technologies/laravel/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Laravel</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"
-                        >
-                          <a
-                            href="#/services/technologies/vuejs/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Vue.js &#038; Nuxt</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26832"
-                        >
-                          <a
-                            href="#/services/technologies/react/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >React</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523"
-                        >
-                          <a
-                            href="#/services/web-development/wordpress/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >WordPress</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26830"
-                        >
-                          <a
-                            href="#/services/technologies/python/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Python</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26831"
-                        >
-                          <a
-                            href="#/services/technologies/nodejs/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Nodejs</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26829"
-                        >
-                          <a
-                            href="#/services/technologies/aws/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >AWS</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-bcf1af1"
-              data-id="bcf1af1"
-              data-element_type="column"
-              data-settings='{"_ob_column_hoveranimator":"no"}'
-            >
-              <div
-                class="elementor-widget-wrap elementor-element-populated"
-              >
-                <div
-                  class="elementor-element elementor-element-1574199 elementor-widget elementor-widget-heading"
-                  data-id="1574199"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h4
-                      class="elementor-heading-title elementor-size-default"
-                    >
-                      Success Stories
-                    </h4>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-d2cf11f elementor-grid-1 elementor-posts--thumbnail-none elementor-posts--align-left elementor-grid-tablet-1 elementor-grid-mobile-1 elementor-widget elementor-widget-posts"
-                  data-id="d2cf11f"
-                  data-element_type="widget"
-                  data-settings='{"classic_columns":"1","classic_row_gap":{"unit":"px","size":10,"sizes":[]},"classic_columns_tablet":"1","classic_row_gap_tablet":{"unit":"px","size":15,"sizes":[]},"classic_columns_mobile":"1","classic_row_gap_laptop":{"unit":"px","size":"","sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":"","sizes":[]},"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="posts.classic"
-                >
-                  <div class="elementor-widget-container">
-                    <div
-                      class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid"
-                    >
-                      <article
-                        class="elementor-post elementor-grid-item post-27449 success-stories type-success-stories status-publish has-post-thumbnail hentry"
-                      >
-                        <div class="elementor-post__text">
-                          <h3 class="elementor-post__title">
-                            <a
-                              href="/success-stories"
-                            >
-                              Modernizing Comcast&#8217;s legacy network
-                              design tool
-                            </a>
-                          </h3>
-                        </div>
-                      </article>
-                      <article
-                        class="elementor-post elementor-grid-item post-23926 success-stories type-success-stories status-publish has-post-thumbnail hentry"
-                      >
-                        <div class="elementor-post__text">
-                          <h3 class="elementor-post__title">
-                            <a
-                              href="/success-stories"
-                            >
-                              Building a web portal for a Fortune 50
-                              healthcare company
-                            </a>
-                          </h3>
-                        </div>
-                      </article>
-                      <article
-                        class="elementor-post elementor-grid-item post-23466 success-stories type-success-stories status-publish has-post-thumbnail hentry"
-                      >
-                        <div class="elementor-post__text">
-                          <h3 class="elementor-post__title">
-                            <a
-                              href="/success-stories"
-                            >
-                              Crafting a streamlined subscription
-                              management solution
-                            </a>
-                          </h3>
-                        </div>
-                      </article>
-                      <article
-                        class="elementor-post elementor-grid-item post-22718 success-stories type-success-stories status-publish has-post-thumbnail hentry"
-                      >
-                        <div class="elementor-post__text">
-                          <h3 class="elementor-post__title">
-                            <a
-                              href="/success-stories"
-                            >
-                              Helping a Series B SaaS company scale
-                              their product team
-                            </a>
-                          </h3>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-02124ff case-study-button elementor-widget elementor-widget-button"
-                  data-id="02124ff"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="button.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div class="elementor-button-wrapper">
-                      <a
-                        class="elementor-button elementor-button-link elementor-size-sm"
-                        href="/success-stories"
-                      >
-                        <span class="elementor-button-content-wrapper">
-                          <span
-                            class="elementor-button-icon elementor-align-icon-right"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="18"
-                              height="15"
-                              viewBox="0 0 18 15"
-                              fill="none"
-                            >
-                              <path
-                                d="M1.4375 7.6875L16.5625 7.6875M16.5625 7.6875L10.5125 1.5M16.5625 7.6875L10.5125 13.875"
-                                stroke="white"
-                                stroke-width="1.925"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              ></path>
-                            </svg>
-                          </span>
-                          <span class="elementor-button-text"
-                            >View all success stories</span
-                          >
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-6c3b8e5 elementor-search-form--skin-classic elementor-search-form--button-type-icon elementor-search-form--icon-search elementor-widget elementor-widget-search-form"
-                  data-id="6c3b8e5"
-                  data-element_type="widget"
-                  data-settings='{"skin":"classic","_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="search-form.default"
-                >
-                  <div class="elementor-widget-container">
-                    <search role="search">
-                      <form
-                        class="elementor-search-form"
-                        action="https://igknighttech.com"
-                        method="get"
-                      >
-                        <div class="elementor-search-form__container">
-                          <label
-                            class="elementor-screen-only"
-                            for="elementor-search-form-6c3b8e5"
-                            >Search</label
-                          >
-
-                          <input
-                            id="elementor-search-form-6c3b8e5"
-                            placeholder="Search..."
-                            class="elementor-search-form__input"
-                            type="search"
-                            name="s"
-                            value=""
-                          />
-
-                          <button
-                            class="elementor-search-form__submit"
-                            type="submit"
-                            aria-label="Search"
-                          >
-                            <i
-                              aria-hidden="true"
-                              class="fas fa-search"
-                            ></i>
-                            <span class="elementor-screen-only"
-                              >Search</span
-                            >
-                          </button>
-                        </div>
-                      </form>
-                    </search>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          class="elementor-section elementor-inner-section elementor-element elementor-element-7f8e48a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-          data-id="7f8e48a"
-          data-element_type="section"
-        >
-          <div class="elementor-container elementor-column-gap-default">
-            <div
-              class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-73beba9"
-              data-id="73beba9"
-              data-element_type="column"
-              data-settings='{"_ob_column_hoveranimator":"no"}'
-            >
-              <div
-                class="elementor-widget-wrap elementor-element-populated"
-              >
-                <div
-                  class="elementor-element elementor-element-eb1eb75 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                  data-id="eb1eb75"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="icon-list.default"
-                 >
-                  <div class="elementor-widget-container">
-                    <ul
-                      class="elementor-icon-list-items elementor-inline-items"
-                    >
-                      <li
-                        class="elementor-icon-list-item elementor-inline-item"
-                      >
-                        <a
-                          href="https://www.linkedin.com/company/igknighttech"
-                        >
-                          <span class="elementor-icon-list-icon">
-                            <i
-                              aria-hidden="true"
-                              class="fab fa-linkedin-in"
-                            ></i>
-                          </span>
-                          <span class="elementor-icon-list-text"></span>
-                        </a>
-                      </li>
-                      <li
-                        class="elementor-icon-list-item elementor-inline-item"
-                      >
-                        <a href="https://www.facebook.com/igknighttech">
-                          <span class="elementor-icon-list-icon">
-                            <i
-                              aria-hidden="true"
-                              class="fab fa-facebook-f"
-                            ></i>
-                          </span>
-                          <span class="elementor-icon-list-text"></span>
-                        </a>
-                      </li>
-                      <li
-                        class="elementor-icon-list-item elementor-inline-item"
-                      >
-                        <a href="https://twitter.com/igknighttech">
-                          <span class="elementor-icon-list-icon">
-                            <i
-                              aria-hidden="true"
-                              class="fab fa-twitter"
-                            ></i>
-                          </span>
-                          <span class="elementor-icon-list-text"></span>
-                        </a>
-                      </li>
-                      <li
-                        class="elementor-icon-list-item elementor-inline-item"
-                      >
-                        <a href="https://www.instagram.com/igknighttech/">
-                          <span class="elementor-icon-list-icon">
-                            <i
-                              aria-hidden="true"
-                              class="fab fa-instagram"
-                            ></i>
-                          </span>
-                          <span class="elementor-icon-list-text"></span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          class="elementor-section elementor-inner-section elementor-element elementor-element-ae63f81 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-          data-id="ae63f81"
-          data-element_type="section"
-        >
-          <div class="elementor-container elementor-column-gap-default">
-            <div
-              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-20444ff"
-              data-id="20444ff"
-              data-element_type="column"
-              data-settings='{"_ob_column_hoveranimator":"no"}'
-            >
-              <div
-                class="elementor-widget-wrap elementor-element-populated"
-              >
-                <div
-                  class="elementor-element elementor-element-de2fda3 elementor-widget elementor-widget-text-editor"
-                  data-id="de2fda3"
-                  data-element_type="widget"
-                  data-settings='{"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>©2024 Igknight Tech. All Rights Reserved.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6c2b807"
-              data-id="6c2b807"
-              data-element_type="column"
-              data-settings='{"_ob_column_hoveranimator":"no"}'
-            >
-              <div
-                class="elementor-widget-wrap elementor-element-populated"
-              >
-                <div
-                  class="elementor-element elementor-element-a9fbf50 elementor-nav-menu__align-end elementor-nav-menu--dropdown-mobile elementor-nav-menu__text-align-center elementor-widget elementor-widget-nav-menu"
-                  data-id="a9fbf50"
-                  data-element_type="widget"
-                  data-settings='{"layout":"horizontal","submenu_icon":{"value":"&lt;i class=\"fas fa-caret-down\"&gt;&lt;\/i&gt;","library":"fa-solid"},"_ob_allow_hoveranimator":"no"}'
-                  data-widget_type="nav-menu.default"
-                >
-                  <div class="elementor-widget-container">
-                    <nav
-                      class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none"
-                    >
-                      <ul
-                        id="menu-1-a9fbf50"
-                        class="elementor-nav-menu"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-753"
-                        >
-                          <a
-                            href="/sitemap"
-                            class="elementor-item menu-link"
-                            >Sitemap</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754"
-                        >
-                          <a
-                            href="/policy"
-                            class="elementor-item menu-link"
-                            >Terms and Conditions</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-755"
-                        >
-                          <a
-                            rel="privacy-policy"
-                            href="/privacy"
-                            class="elementor-item menu-link"
-                            >Privacy</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                    <nav
-                      class="elementor-nav-menu--dropdown elementor-nav-menu__container"
-                      aria-hidden="true"
-                    >
-                      <ul
-                        id="menu-2-a9fbf50"
-                        class="elementor-nav-menu"
-                      >
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-753"
-                        >
-                          <a
-                            href="https://igknighttech.com/sitemap/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Sitemap</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754"
-                        >
-                          <a
-                            href="https://igknighttech.com/policies/terms/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Terms and Conditions</a
-                          >
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-755"
-                        >
-                          <a
-                            rel="privacy-policy"
-                            href="https://igknighttech.com/policies/privacy/"
-                            class="elementor-item menu-link"
-                            tabindex="-1"
-                            >Privacy</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<footer class="site-footer">
+  <div class="footer-main">
+    <!-- Locations & Contact -->
+    <div class="footer-col">
+      <div style="margin-bottom: 24px;">
+        <div class="footer-title">Headquarters</div>
+        <div style="font-size: 14px; color: #cfd8e3; line-height: 1.7;">
+          Igknight Tech<br>
+          4 Gibbs Street<br>
+          Auburn NSW Sydney,<br>
+          Australia
+        </div>
+      </div>
+      <div style="margin-bottom: 24px;">
+        <div class="footer-title">Phone</div>
+        <div style="font-size: 14px;">
+          <a href="https://wa.me/61420694767" style="color: #ffc72c; text-decoration: none;">+61 420 694 767</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <div style="font-size: 14px; color: #cfd8e3;">
+          📧 info@igknighttech.com
+        </div>
       </div>
     </div>
+
+    <!-- Company -->
+    <div class="footer-company">
+      <div class="footer-title" style="margin-bottom: 16px;">Company</div>
+      <ul class="footer-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about-us">About</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/insights/">Insights</a></li>
+      </ul>
+      <a href="/contact" class="footer-btn">Get in Touch</a>
+      <div class="footer-capabilities">Capabilities</div>
+      <ul class="footer-list" style="margin: 0;">
+        <li><a href="/services">Application Development</a></li>
+        <li><a href="/services">Web Development</a></li>
+        <li><a href="/services">AI / ML</a></li>
+        <li><a href="/services">Staff Augmentation</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-services">
+      <div class="footer-title" style="margin-bottom: 16px;">Development Services</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 0 32px;">
+        <ul class="footer-list" style="margin: 0 32px 0 0; min-width: 160px;">
+          <li><a href="#">Laravel Development</a></li>
+          <li><a href="#">Python Development</a></li>
+          <li><a href="#">Nodejs Development</a></li>
+          <li><a href="#">PHP Development</a></li>
+          <li><a href="#">AI / ML Development</a></li>
+          <li><a href="#">AI Agent Development</a></li>
+          <li><a href="#">React Development</a></li>
+          <li><a href="#">Vue.js &amp; Nuxt Development</a></li>
+          <li><a href="#">Angular Development</a></li>
+        </ul>
+        <ul class="footer-list" style="margin: 0; min-width: 160px;">
+          <li><a href="#">AWS Consulting</a></li>
+          <li><a href="#">.NET Development</a></li>
+          <li><a href="#">Java Development</a></li>
+          <li><a href="#">Go Development</a></li>
+          <li><a href="#">Ruby On Rails Development</a></li>
+          <li><a href="#">WordPress Development</a></li>
+          <li><a href="#">Flutter Development</a></li>
+          <li><a href="#">Android Development</a></li>
+          <li><a href="#">iOS Development</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- News and Press -->
+    <div class="footer-news">
+      <div class="footer-title" style="margin-bottom: 16px;">News and Press</div>
+      <div style="font-size: 14px; color: #cfd8e3; margin-bottom: 16px;">
+        <div style="margin-bottom: 12px;">
+          <a href="#" class="footer-news-link">Curotec Names Rebecca Schlanger as Vice President of Operations to Drive Scalable Growth and Operational Excellence</a>
+          <div class="footer-news-date">June 27, 2025</div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <a href="#" class="footer-news-link">Curotec Unveils Self-Hosted AI Platform That Cuts Dev Time by 70% Without Compromising Security</a>
+          <div class="footer-news-date">May 23, 2025</div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <a href="#" class="footer-news-link">Curotec Reports Major Growth in Nearshore Staffing and AI Consulting for 2025</a>
+          <div class="footer-news-date">May 22, 2025</div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <a href="#" class="footer-news-link">Curotec Opens New Sales and Marketing Office in Philadelphia to Fuel Continued Growth</a>
+          <div class="footer-news-date">April 14, 2025</div>
+        </div>
+      </div>
+      <a href="#" class="footer-news-viewall">
+        View all News and Press
+        <span style="margin-left: 8px;">&#8594;</span>
+      </a>
+      <form class="footer-search-form">
+        <input type="search" placeholder="Search..." class="footer-search-input">
+        <button type="submit" class="footer-search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
   </div>
-</section>
-</div>
+
+  <hr class="footer-divider">
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-text">
+      &copy; <%= Time.now.year %> Igknight Tech. All Rights Reserved.
+    </div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/igknighttech"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/igknighttech"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/igknighttech"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/igknighttech/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-bottom-links">
+      <a href="/sitemap">Sitemap</a>
+      <a href="#">Accessibility Statement</a>
+      <a href="/policy">Terms and Conditions</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+  </div>
+</footer>
