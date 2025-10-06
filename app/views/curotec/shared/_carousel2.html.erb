@@ -2,6 +2,7 @@
    class="elementor-section elementor-inner-section elementor-element elementor-element-cbcf50c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
    data-id="cbcf50c"
    data-element_type="section"
+   style="padding-bottom: 100px;"
    >
    <div class="elementor-container elementor-column-gap-no">
       <div
@@ -17,7 +18,7 @@
                class="elementor-element elementor-element-100ff7c0 elementor-widget__width-initial elementor-arrows-position-inside elementor-widget elementor-widget-loop-carousel"
                data-id="100ff7c0"
                data-element_type="widget"
-               data-settings='{"template_id":"9483","slides_to_show_laptop":"2","image_spacing_custom":{"unit":"px","size":32,"sizes":[]},"slides_to_scroll_tablet":"1","slides_to_show_tablet":"1","_skin":"post","slides_to_show":"3","slides_to_show_mobile":"1","edit_handle_selector":".elementor-widget-container","speed":500,"arrows":"yes","image_spacing_custom_laptop":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]},"_ob_allow_hoveranimator":"no"}'
+               data-settings='{"template_id":"9483","slides_to_show_laptop":"2","image_spacing_custom":{"unit":"px","size":32,"sizes":[]},"slides_to_scroll_tablet":"1","slides_to_show_tablet":"1","_skin":"post","slides_to_show":"3","slides_to_scroll":"1","slides_to_scroll_laptop":"1","slides_to_show_mobile":"1","edit_handle_selector":".elementor-widget-container","speed":500,"arrows":"yes","image_spacing_custom_laptop":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]},"_ob_allow_hoveranimator":"no"}'
                data-widget_type="loop-carousel.post"
                >
                <div class="elementor-widget-container">
@@ -864,7 +865,7 @@
                                                                >
                                                             <span
                                                                aria-hidden="true"
-                                                               class="bi bi-arrow-right"
+                                                               class="fa-solid fa-arrow-right"
                                                                ></span>
                                                             </span>
                                                             <span
@@ -1010,7 +1011,7 @@
                                                                >
                                                             <span
                                                                aria-hidden="true"
-                                                               class="bi bi-arrow-right"
+                                                               class="fa-solid fa-arrow-right"
                                                                ></span>
                                                             </span>
                                                             <span
@@ -1155,7 +1156,7 @@
                                                                >
                                                             <span
                                                                aria-hidden="true"
-                                                               class="bi bi-arrow-right"
+                                                               class="fa-solid fa-arrow-right"
                                                                ></span>
                                                             </span>
                                                             <span
@@ -1301,7 +1302,7 @@
                                                                >
                                                             <span
                                                                aria-hidden="true"
-                                                               class="bi bi-arrow-right"
+                                                               class="fa-solid fa-arrow-right"
                                                                ></span>
                                                             </span>
                                                             <span
@@ -1447,7 +1448,7 @@
                                                                >
                                                             <span
                                                                aria-hidden="true"
-                                                               class="bi bi-arrow-right"
+                                                               class="fa-solid fa-arrow-right"
                                                                ></span>
                                                             </span>
                                                             <span
@@ -1582,7 +1583,7 @@
                                                                >
                                                             <span
                                                                aria-hidden="true"
-                                                               class="bi bi-arrow-right"
+                                                               class="fa-solid fa-arrow-right"
                                                                ></span>
                                                             </span>
                                                             <span
@@ -1729,7 +1730,7 @@
                                                                >
                                                             <span
                                                                aria-hidden="true"
-                                                               class="bi bi-arrow-right"
+                                                               class="fa-solid fa-arrow-right"
                                                                ></span>
                                                             </span>
                                                             <span
@@ -1824,7 +1825,7 @@
                                                             <a class="elementor-button elementor-button-link elementor-size-sm" href = "/success-stories" >
                                                             <span class="elementor-button-content-wrapper" >
                                                             <span class="elementor-button-icon elementor-align-icon-right" >
-                                                            <span aria-hidden="true" class="bi bi-arrow-right"></span>
+                                                            <span aria-hidden="true" class="fa-solid fa-arrow-right"></span>
                                                             </span>
                                                             <span class="elementor-button-text" >Read the story</span>
                                                             </span>
@@ -1849,9 +1850,253 @@
                   <div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
                      <i aria-hidden="true" class="fas fa-chevron-right"></i>			
                   </div>
+                  
                </div>
             </div>
          </div>
       </div>
    </div>
 </section>
+<hr style=" margin-top: 4%; width:100%; border: 1px solid #222c47;" />
+
+
+<script>
+  (function () {
+    function wire(root) {
+      if (!root) {
+        return;
+      }
+
+      var container = root.querySelector('.swiper');
+      var swiper =
+        container &&
+        (container.swiper ||
+          (window.jQuery &&
+            window.jQuery(container).data &&
+            window.jQuery(container).data('swiper')));
+
+      if (!swiper) {
+        if (window.Swiper) {
+          var prev = root.querySelector('.elementor-swiper-button-prev');
+          var next = root.querySelector('.elementor-swiper-button-next');
+          var settingsRaw = root.getAttribute('data-settings');
+          var parsed = {};
+
+          try {
+            parsed = settingsRaw ? JSON.parse(settingsRaw) : {};
+          } catch (e) {
+            parsed = {};
+          }
+
+          var slidesToShow =
+            parseInt(parsed.slides_to_show || '3', 10) || 3;
+          var speed = parseInt(parsed.speed || '500', 10) || 500;
+
+          swiper = new window.Swiper(container, {
+            speed: speed,
+            slidesPerView: slidesToShow,
+            slidesPerGroup: 1,
+            watchSlidesProgress: true,
+            navigation: { prevEl: prev, nextEl: next },
+            breakpoints: {
+              0: {
+                slidesPerView:
+                  parseInt(parsed.slides_to_show_mobile || '1', 10) || 1,
+                slidesPerGroup: 1,
+              },
+              768: {
+                slidesPerView:
+                  parseInt(parsed.slides_to_show_tablet || '1', 10) || 1,
+                slidesPerGroup: 1,
+              },
+              1025: {
+                slidesPerView: slidesToShow,
+                slidesPerGroup: 1,
+              },
+            },
+          });
+
+          container.swiper = swiper;
+        } else {
+          setTimeout(function () {
+            wire(root);
+          }, 150);
+          return;
+        }
+      }
+
+      if (swiper.params) {
+        swiper.params.slidesPerGroup = 1;
+        swiper.params.slidesPerGroupSkip = 0;
+        swiper.params.slidesPerGroupAuto = false;
+
+        if (swiper.params.breakpoints) {
+          Object.keys(swiper.params.breakpoints).forEach(function (bp) {
+            var cfg = swiper.params.breakpoints[bp] || {};
+            cfg.slidesPerGroup = 1;
+            cfg.slidesPerGroupSkip = 0;
+            cfg.slidesPerGroupAuto = false;
+            swiper.params.breakpoints[bp] = cfg;
+          });
+        }
+      }
+
+      var prev = root.querySelector('.elementor-swiper-button-prev');
+      var next = root.querySelector('.elementor-swiper-button-next');
+
+      // Fully disable Swiper's built-in navigation to avoid double handling
+      if (swiper.navigation) {
+        try {
+          swiper.navigation.destroy();
+        } catch (e) {}
+      }
+
+      if (swiper.params && swiper.params.navigation) {
+        swiper.params.navigation.enabled = false;
+      }
+
+      function cloneAndSwap(el) {
+        if (!el || !el.parentNode) {
+          return el;
+        }
+        var c = el.cloneNode(true);
+        el.parentNode.replaceChild(c, el);
+        return c;
+      }
+
+      prev = cloneAndSwap(prev);
+      next = cloneAndSwap(next);
+
+      function setDisabled(el, flag){
+        if(!el){ return; }
+        if(flag){
+          el.setAttribute('aria-disabled','true');
+          el.classList.add('is-disabled');
+          el.style.pointerEvents = 'none';
+          el.style.opacity = '0.5';
+        } else {
+          el.removeAttribute('aria-disabled');
+          el.classList.remove('is-disabled');
+          el.style.pointerEvents = '';
+          el.style.opacity = '';
+        }
+      }
+      function updateArrows(){
+        if (!swiper) { return; }
+        if (swiper.params && swiper.params.loop) {
+          setDisabled(prev, false);
+          setDisabled(next, false);
+          return;
+        }
+        setDisabled(prev, !!swiper.isBeginning);
+        setDisabled(next, !!swiper.isEnd);
+      }
+
+      if (prev) {
+        prev.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation && e.stopImmediatePropagation();
+          if (prev.getAttribute('aria-disabled') === 'true') { return; }
+
+          var current =
+            typeof swiper.realIndex === 'number'
+              ? swiper.realIndex
+              : swiper.activeIndex || 0;
+
+          var target = current - 1;
+
+          if (typeof swiper.slideToLoop === 'function') {
+            swiper.slideToLoop(target, 300);
+          } else if (typeof swiper.slideTo === 'function') {
+            swiper.slideTo(Math.max(0, target), 300);
+          }
+        });
+      }
+
+      if (next) {
+        next.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation && e.stopImmediatePropagation();
+          if (next.getAttribute('aria-disabled') === 'true') { return; }
+
+          var current =
+            typeof swiper.realIndex === 'number'
+              ? swiper.realIndex
+              : swiper.activeIndex || 0;
+
+          var target = current + 1;
+
+          if (typeof swiper.slideToLoop === 'function') {
+            swiper.slideToLoop(target, 300);
+          } else if (typeof swiper.slideTo === 'function') {
+            swiper.slideTo(target, 300);
+          }
+        });
+      }
+
+      if (typeof swiper.update === 'function') {
+        swiper.update();
+      }
+      if (typeof swiper.on === 'function'){
+        swiper.on('slideChange', updateArrows);
+        swiper.on('update', updateArrows);
+        swiper.on('reachBeginning', updateArrows);
+        swiper.on('reachEnd', updateArrows);
+      }
+      updateArrows();
+    }
+
+    function init() {
+      var root = document.querySelector('[data-id="100ff7c0"]');
+
+      if (!window.Swiper) {
+        var script = document.createElement('script');
+        script.src =
+          'https://unpkg.com/swiper@8/swiper-bundle.min.js';
+        script.async = true;
+        script.onload = function () {
+          wire(root);
+        };
+        script.onerror = function () {};
+        (document.head || document.body).appendChild(script);
+      } else {
+        wire(root);
+      }
+    }
+
+    if (window.jQuery && window.elementorFrontend) {
+      window.jQuery(window).on('elementor/frontend/init', function () {
+        var handler = function (scope) {
+          if (
+            scope &&
+            scope[0] &&
+            scope[0].dataset &&
+            scope[0].dataset.id === '100ff7c0'
+          ) {
+            wire(scope[0]);
+          }
+        };
+
+        if (
+          window.elementorFrontend.hooks &&
+          window.elementorFrontend.hooks.addAction
+        ) {
+          window.elementorFrontend.hooks.addAction(
+            'frontend/element_ready/loop-carousel.default',
+            handler
+          );
+        }
+
+        init();
+      });
+    } else if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        init();
+      });
+    } else {
+      init();
+    }
+  })();
+</script>

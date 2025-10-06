@@ -6396,6 +6396,8 @@
       .elementor-item:focus {
       color: #ffffffd9;
       fill: #ffffffd9;
+      border-bottom: 1px solid var(--e-global-color-accent);
+      padding-bottom: 2px;
     }
     .elementor-471 .elementor-element.elementor-element-a9fbf50 {
       --e-nav-menu-divider-content: "";
@@ -6432,7 +6434,9 @@
     .elementor-471
       .elementor-element.elementor-element-a9fbf50
       .elementor-menu-toggle:hover {
-      color: var(--e-global-color-accent);
+      color: #ffffffb3;
+      border-bottom: 1px solid var(--e-global-color-accent);
+      padding-bottom: 2px;
     }
     .elementor-471
       .elementor-element.elementor-element-a9fbf50
@@ -10086,7 +10090,7 @@
     padding: 16px;
     border-radius: 40px;
     background: rgba(255, 255, 255, 0.3);
-    width: 548px;
+    width: 460px;
     }
     .elementor-9
     .elementor-element.elementor-element-100ff7c0
@@ -20961,5 +20965,17 @@ transform: scale(1.1);
     a:hover {
     border-radius: 100px;
     transition: border-radius 0.3s ease-out;
-} /* End custom CSS */
+}
+#menu-2-a9fbf50 li + li::before {
+  content: "|";
+  margin: 0 10px;
+  color: #FFFFFFB3 !important;
+}
+.elementor-button-text {
+  order: -1
+}
+.fa-arrow-right {
+  margin-top: auto;
+}
+/* End custom CSS */
 </style>
